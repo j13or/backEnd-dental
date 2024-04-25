@@ -1,21 +1,29 @@
 import { AppError } from '../utils/AppError.js';
 import { Cita } from '../models/cita.model.js';
+import { Paciente } from '../models/paciente.model.js';
 
 export const findAll = async (req, res) => {
   const { fecha } = req.query;
+  const { id } = req.params;
 
   try {
     let whereCondition = {};
 
     if (fecha) {
-      whereCondition = { fecha };
+      whereCondition = { fecha, consultorioId: id };
     } else {
-      whereCondition = {};
+      whereCondition = { consultorioId: id };
     }
 
     const citas = await Cita.findAll({
       where: whereCondition,
+
       order: [['id', 'ASC']],
+      include: [
+        {
+          model: Paciente,
+        },
+      ],
     });
 
     return res.status(200).json({
@@ -92,10 +100,11 @@ export const findOne = async (req, res) => {
 export const create = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { descripcion, fecha, titulo } = req.body;
+    const { descripcion, fecha, titulo, consultorioId } = req.body;
 
     const cita = await Cita.create({
       pacienteId: id,
+      consultorioId,
       descripcion,
       fecha,
       titulo,

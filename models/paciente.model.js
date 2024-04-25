@@ -8,6 +8,10 @@ const Paciente = db.define('paciente', {
     allowNull: false,
     type: DataTypes.INTEGER,
   },
+  consultorioId: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
   carnet: {
     type: DataTypes.STRING,
     unique: true,

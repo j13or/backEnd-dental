@@ -4,17 +4,23 @@ import { Op } from 'sequelize';
 
 export const findAll = async (req, res, next) => {
   const { search } = req.query;
+  const { id } = req.params;
+
+  console.log(id);
   try {
     let pacientes;
 
     if (!search) {
       pacientes = await Paciente.findAll({
+        where: { consultorioId: id },
         limit: 10,
         order: [['createdAt', 'DESC']],
       });
     } else {
       pacientes = await Paciente.findAll({
         where: {
+          consultorioId: id,
+
           [Op.or]: [
             { apellidoPaterno: { [Op.iLike]: `%${search}%` } },
             { apellidoMaterno: { [Op.iLike]: `%${search}%` } },
@@ -69,6 +75,7 @@ export const create = async (req, res, next) => {
       fechaDeNacimiento,
       alergia,
       tipoDeSangre,
+      consultorioId,
     } = req.body;
 
     const paciente = await Paciente.create({
@@ -81,8 +88,8 @@ export const create = async (req, res, next) => {
       fechaDeNacimiento,
       alergia,
       tipoDeSangre,
+      consultorioId,
     });
-    console.log(paciente);
 
     return res.status(201).json({
       status: 'success',

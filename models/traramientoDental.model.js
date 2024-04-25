@@ -12,6 +12,10 @@ const TratamientoDental = db.define('tratamientoDental', {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
+  consultorioId: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
   codigoDiente: {
     type: DataTypes.STRING,
     allowNull: false,

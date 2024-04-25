@@ -1,17 +1,20 @@
 import { AppError } from '../utils/AppError.js';
-import { TratamientoDental } from '../models/traramientoDental.model.js';
+import { Tratamiento } from '../models/tratamiento.model.js';
 
 export const findAll = async (req, res) => {
   try {
-    const tratamientosDental = await TratamientoDental.findAll({
+    const { id } = req.params;
+
+    const tratamientos = await Tratamiento.findAll({
+      where: { consultorioId: id },
       order: [['id', 'ASC']],
     });
 
     return res.status(200).json({
       status: 'success',
       message: 'Todas los tratamientos Dental',
-      results: tratamientosDental.length,
-      tratamientosDental,
+      results: tratamientos.length,
+      tratamientos,
     });
   } catch (error) {
     return next(
@@ -25,19 +28,16 @@ export const findAll = async (req, res) => {
 
 export const findOne = async (req, res) => {
   try {
-    const { tratamientoDental } = req;
+    const { tratamiento } = req;
 
     return res.status(200).json({
       status: 'success',
-      message: 'el tratamiento Dental se llamo exitosamente ',
-      tratamientoDental,
+      message: 'el tratamiento  se llamo exitosamente ',
+      tratamiento,
     });
   } catch (error) {
     return next(
-      new AppError(
-        `Error al llamar a el tratamiento Dental: ${error.message}`,
-        500
-      )
+      new AppError(`Error al llamar a el tratamiento : ${error.message}`, 500)
     );
   }
 };
@@ -45,46 +45,41 @@ export const findOne = async (req, res) => {
 export const create = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { codigoDiente, tratamiento, precio, consultorioId } = req.body;
+    const { nombre, precio, consultorioId } = req.body;
 
-    const tratamientoDental = await TratamientoDental.create({
-      consultaId: id,
-      codigoDiente,
-      tratamiento,
+    const tratamiento = await Tratamiento.create({
+      consultorioId: id,
+      nombre,
       precio,
       consultorioId,
     });
 
     return res.status(201).json({
       status: 'success',
-      message: 'El tratamiento Dental se creó exitosamente',
-      tratamientoDental,
+      message: 'El tratamiento  se creó exitosamente',
+      tratamiento,
     });
   } catch (error) {
     return next(
-      new AppError(
-        `Error al crear el tratamiento Dental: ${error.message}`,
-        500
-      )
+      new AppError(`Error al crear el tratamiento : ${error.message}`, 500)
     );
   }
 };
 
 export const update = async (req, res, next) => {
   try {
-    const { tratamientoDental } = req;
-    const { codigoDiente, tratamiento, precio } = req.body;
+    const { tratamiento } = req;
+    const { nombre, precio } = req.body;
 
-    await consulta.update({
-      codigoDiente,
-      tratamiento,
+    await tratamiento.update({
+      nombre,
       precio,
     });
 
     return res.status(200).json({
       status: 'success',
-      message: 'Los datos del tratamiento Dental se actualizaron exitosamente',
-      tratamientoDental,
+      message: 'Los datos del tratamiento  se actualizaron exitosamente',
+      tratamiento,
     });
   } catch (error) {
     // Manejo de errores
@@ -98,14 +93,14 @@ export const update = async (req, res, next) => {
 };
 
 export const deleteElement = async (req, res, next) => {
-  const { tratamientoDental } = req;
+  const { tratamiento } = req;
 
   try {
-    await tratamientoDental.destroy();
+    await tratamiento.destroy();
 
     return res.status(200).json({
       status: 'success',
-      message: 'El tratamientoDental se  elimino exitosamente',
+      message: 'El tratamiento se  elimino exitosamente',
     });
   } catch (error) {
     return next(new AppError(`Hubo un error al eliminar el tratamiento`, 500));

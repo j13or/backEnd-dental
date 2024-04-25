@@ -2,11 +2,34 @@ import { AppError } from '../utils/AppError.js';
 import { Usuario } from '../models/usuario.model.js';
 import bcrypt from 'bcryptjs';
 import { generateJWT } from '../utils/jwt.js';
+import { Consultorio } from '../models/consultorio.model.js';
 
 export const findAll = async (req, res, next) => {
   try {
     const usuarios = await Usuario.findAll({
       order: [['id', 'ASC']],
+      include: [{ model: Consultorio }],
+    });
+
+    return res.status(200).json({
+      status: 'success',
+      results: usuarios.length,
+      usuarios,
+    });
+  } catch (error) {
+    return next(
+      new AppError(`Error al llamar a todos los usuario: ${error.message}`, 500)
+    );
+  }
+};
+
+export const findAllConsultorio = async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    const usuarios = await Usuario.findAll({
+      where: { consultorioId: id },
+      order: [['id', 'ASC']],
+      include: [{ model: Consultorio }],
     });
 
     return res.status(200).json({
@@ -38,6 +61,7 @@ export const findOne = async (req, res, next) => {
 
 export const signup = async (req, res, next) => {
   try {
+    const { id } = req.params;
     const { nombres, apellidos, email, contraseña, rol, telefono } = req.body;
 
     // Generación del hash de la contraseña
@@ -45,14 +69,28 @@ export const signup = async (req, res, next) => {
     const hashedPassword = await bcrypt.hash(contraseña, salt);
 
     // Creación del usuario en la base de datos
-    const usuario = await Usuario.create({
-      nombres,
-      apellidos,
-      email,
-      rol,
-      telefono,
-      contraseña: hashedPassword,
-    });
+    let usuario;
+    if (rol === 'SuperAdmin') {
+      usuario = await Usuario.create({
+        consultorioId: null,
+        nombres,
+        apellidos,
+        email,
+        rol,
+        telefono,
+        contraseña: hashedPassword,
+      });
+    } else {
+      usuario = await Usuario.create({
+        consultorioId: id,
+        nombres,
+        apellidos,
+        email,
+        rol,
+        telefono,
+        contraseña: hashedPassword,
+      });
+    }
 
     // Generación del token JWT
     const token = await generateJWT(usuario.id);
@@ -67,7 +105,7 @@ export const signup = async (req, res, next) => {
     // Manejo de errores
     if (error.name === 'SequelizeValidationError') {
       const errors = error.errors.map((err) => err.message);
-      return next(new AppError(`Datos inválidos: ${errors.join(', ')}`, 400));
+      return next(new AppError(`Datos inválidos: ${errors(', ')}`, 400));
     }
     return next(
       new AppError(`Error al crear el usuario: ${error.message}`, 500)
@@ -82,6 +120,7 @@ export const login = async (req, res, next) => {
     const usuario = await Usuario.findOne({
       where: {
         email,
+        estado: 'Activo',
       },
     });
 
@@ -112,19 +151,52 @@ export const login = async (req, res, next) => {
   }
 };
 
+export const updatePassword = async (req, res, next) => {
+  try {
+    // Extraer datos del cuerpo de la solicitud y el usuario autenticado
+    const { contraseña } = req.body;
+    const { usuario } = req;
+
+    const salt = await bcrypt.genSalt(12);
+    const hashedPassword = await bcrypt.hash(contraseña, salt);
+
+    await usuario.update({
+      contraseña: hashedPassword,
+    });
+
+    // Responder con los datos actualizados del usuario
+    return res.status(200).json({
+      status: 'success',
+      message: 'Los datos del usuario se actualizaron exitosamente',
+      usuario,
+    });
+  } catch (error) {
+    // Manejo de errores
+    return next(
+      new AppError(
+        `Hubo un error al actualizar sus datos: ${error.message}`,
+        500
+      )
+    );
+  }
+};
+
 export const update = async (req, res, next) => {
   try {
     // Extraer datos del cuerpo de la solicitud y el usuario autenticado
-    const { nombres, apellidos, email, rol, telefono } = req.body;
+    const { nombres, apellidos, email, rol, telefono, consultorioId, estado } =
+      req.body;
     const { usuario } = req;
 
     // Actualizar los datos del usuario
     await usuario.update({
+      consultorioId,
       nombres,
       apellidos,
       rol,
       email,
       telefono,
+      estado,
     });
 
     // Responder con los datos actualizados del usuario

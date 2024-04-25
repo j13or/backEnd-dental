@@ -4,10 +4,15 @@ import * as citaMiddleware from '../middlewares/cita.middleware.js';
 import * as citaController from '../controllers/cita.controllers.js';
 
 import * as pacienteMiddleware from '../middlewares/paciente.middleware.js';
+import * as consultorioMiddleware from '../middlewares/consultorio.middleware.js';
 
 const router = express.Router();
 
-router.get('/', citaController.findAll);
+router.get(
+  '/consultorio/:id/',
+  consultorioMiddleware.validExistConsultorio,
+  citaController.findAll
+);
 
 router.get(
   '/paciente/:id',

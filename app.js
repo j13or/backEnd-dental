@@ -12,6 +12,8 @@ import { citaRouter } from './routes/cita.routes.js';
 import { pacienteRouter } from './routes/pacientes.routes.js';
 import { consultaRouter } from './routes/consulta.routes.js';
 import { traramientoDentalRouter } from './routes/tratamientoDental.routes.js';
+import { consultorioRouter } from './routes/consultorio.routes.js';
+import { traatamientoRouter } from './routes/tratamiento.routes.js';
 
 const app = express();
 app.use(express.json());
@@ -29,9 +31,11 @@ app.use(xss());
 app.use(hpp());
 
 app.use('/api/v1', limiter);
+app.use('/api/v1/consultorio', consultorioRouter);
 app.use('/api/v1/usuario', usuarioRouter);
 app.use('/api/v1/cita', citaRouter);
 app.use('/api/v1/paciente', pacienteRouter);
+app.use('/api/v1/tratamiento', traatamientoRouter);
 app.use('/api/v1/consulta', consultaRouter);
 app.use('/api/v1/tratamiento-dental', traramientoDentalRouter);
 

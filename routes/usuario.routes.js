@@ -7,10 +7,16 @@ import * as autenticaciónMiddleware from '../middlewares/autenticación.middlew
 const router = express.Router();
 
 router.get('/', usuarioController.findAll);
+router.get('/consultorio/:id', usuarioController.findAllConsultorio);
 router.post('/login', usuarioController.login);
-router.post('/signup', usuarioController.signup);
+router.post('/signup/:id', usuarioController.signup);
 
 router.use(autenticaciónMiddleware.proteger);
+router.patch(
+  '/update-password/:id',
+  usuarioMiddleware.validExistUsuario,
+  usuarioController.updatePassword
+);
 
 router
   .route('/:id')

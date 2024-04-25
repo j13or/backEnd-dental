@@ -12,6 +12,10 @@ const Cita = db.define('cita', {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
+  consultorioId: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
   titulo: {
     type: DataTypes.STRING,
     allowNull: false,

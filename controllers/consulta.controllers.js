@@ -3,9 +3,12 @@ import { Consulta } from '../models/consulta.model.js';
 import { TratamientoDental } from '../models/traramientoDental.model.js';
 import { Paciente } from '../models/paciente.model.js';
 import { Op, Sequelize } from 'sequelize'; // Asegúrate de importar Sequelize
+import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
+import { storage } from '../utils/firebase.js';
 
 export const findAll = async (req, res, next) => {
   const { date, mes, año } = req.query;
+  const { id } = req.params;
 
   try {
     let whereCondition = {};
@@ -28,7 +31,8 @@ export const findAll = async (req, res, next) => {
     }
 
     const consultas = await Consulta.findAll({
-      where: whereCondition,
+      where: { whereCondition, consultorioId: id },
+
       order: [['id', 'DESC']],
       include: [
         {
@@ -53,6 +57,32 @@ export const findAll = async (req, res, next) => {
     );
   }
 };
+
+export const findAllConsultasId = async (req, res, next) => {
+  const { id } = req.params;
+  try {
+    const consultas = await Consulta.findAll({
+      where: {
+        consultorioId: id,
+      },
+    });
+
+    return res.status(200).json({
+      status: 'success',
+      message: 'Todas las consultas',
+      results: consultas.length,
+      consultas,
+    });
+  } catch (error) {
+    return next(
+      new AppError(
+        `Error al llamar a todas las consultas: ${error.message}`,
+        500
+      )
+    );
+  }
+};
+
 export const findAllPacienteId = async (req, res, next) => {
   const { paciente } = req;
   try {
@@ -100,24 +130,38 @@ export const findOne = async (req, res) => {
 export const create = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { data, tratamientosDental } = req.body;
+    const { data, tratamientosDental, consultorioId } = req.body;
 
-    console.log(tratamientosDental);
+    const dataJson = JSON.parse(data);
+    const tratamientoDentalJson = JSON.parse(tratamientosDental);
+
+    const fileRef = ref(
+      storage,
+      `linkFile/${Date.now()}-${req.file.originalname}`
+    );
+
+    await uploadBytes(fileRef, req.file.buffer);
+
+    const fileUploaded = await getDownloadURL(fileRef);
 
     const consulta = await Consulta.create({
       pacienteId: id,
-      titulo: data.titulo,
-      descripcion: data.descripcion,
-      montoTotal: data.montoTotal,
+      titulo: dataJson.titulo,
+      descripcion: dataJson.descripcion,
+      montoTotal: dataJson.montoTotal,
+      adelantoPago: dataJson.adelantoPago,
+      consultorioId,
+      linkFile: fileUploaded,
     });
 
     // Crear un array de promesas para la creación de tratamientos dentales
-    const promises = tratamientosDental.map((tratamientoDental) => {
+    const promises = tratamientoDentalJson.map((tratamientoDental) => {
       return TratamientoDental.create({
         consultaId: consulta.id,
         codigoDiente: tratamientoDental.codigoDiente,
         tratamiento: tratamientoDental.tratamiento,
         precio: tratamientoDental.precio,
+        consultorioId,
       });
     });
 
@@ -139,12 +183,13 @@ export const create = async (req, res, next) => {
 export const update = async (req, res, next) => {
   try {
     const { consulta } = req;
-    const { titulo, descripcion, montoTotal } = req.body;
+    const { titulo, descripcion, montoTotal, adelantoPago } = req.body;
 
     await consulta.update({
       titulo,
       descripcion,
       montoTotal,
+      adelantoPago,
     });
 
     return res.status(200).json({

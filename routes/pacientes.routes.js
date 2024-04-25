@@ -8,7 +8,7 @@ const router = express.Router();
 
 router.use(autenticaciónMiddleware.proteger);
 
-router.get('/', pacienteController.findAll);
+router.get('/consultorio/:id', pacienteController.findAll);
 router.post('/', pacienteController.create);
 
 router

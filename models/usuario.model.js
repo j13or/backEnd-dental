@@ -8,6 +8,10 @@ const Usuario = db.define('usuario', {
     allowNull: false,
     type: DataTypes.INTEGER,
   },
+  consultorioId: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
   nombres: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -30,10 +34,15 @@ const Usuario = db.define('usuario', {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  rol: {
-    type: DataTypes.ENUM('doctor', 'secretaria'),
+  estado: {
+    type: DataTypes.ENUM('Activo', 'Desconectado'),
     allowNull: false,
-    defaultValue: 'doctor',
+    defaultValue: 'Activo',
+  },
+  rol: {
+    type: DataTypes.ENUM('SuperAdmin', 'Administrador', 'Doctor', 'Secretaria'),
+    allowNull: false,
+    defaultValue: 'Administrador',
   },
 });
 
