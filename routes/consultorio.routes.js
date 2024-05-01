@@ -6,10 +6,9 @@ import * as autenticaciónMiddleware from '../middlewares/autenticación.middlew
 
 const router = express.Router();
 
-// router.use(autenticaciónMiddleware.proteger);
-
 router.get('/', consultorioController.findAll);
 
+router.use(autenticaciónMiddleware.proteger);
 router.post('/', consultorioController.create);
 router
   .route('/:id')

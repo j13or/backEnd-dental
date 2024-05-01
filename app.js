@@ -14,6 +14,8 @@ import { consultaRouter } from './routes/consulta.routes.js';
 import { traramientoDentalRouter } from './routes/tratamientoDental.routes.js';
 import { consultorioRouter } from './routes/consultorio.routes.js';
 import { traatamientoRouter } from './routes/tratamiento.routes.js';
+import { citaEnLineaRouter } from './routes/citaEnLinea.routes.js';
+import { planTratamientoRouter } from './routes/planTratamiento.routes.js';
 
 const app = express();
 app.use(express.json());
@@ -34,10 +36,12 @@ app.use('/api/v1', limiter);
 app.use('/api/v1/consultorio', consultorioRouter);
 app.use('/api/v1/usuario', usuarioRouter);
 app.use('/api/v1/cita', citaRouter);
+app.use('/api/v1/cita-linea', citaEnLineaRouter);
 app.use('/api/v1/paciente', pacienteRouter);
 app.use('/api/v1/tratamiento', traatamientoRouter);
 app.use('/api/v1/consulta', consultaRouter);
 app.use('/api/v1/tratamiento-dental', traramientoDentalRouter);
+app.use('/api/v1/plan-tratamiento', planTratamientoRouter);
 
 app.all('*', (req, res, next) => {
   return next(

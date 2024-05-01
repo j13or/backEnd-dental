@@ -6,7 +6,6 @@ export const findAll = async (req, res, next) => {
   const { search } = req.query;
   const { id } = req.params;
 
-  console.log(id);
   try {
     let pacientes;
 

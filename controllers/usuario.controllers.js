@@ -221,8 +221,9 @@ export const deleteElement = async (req, res, next) => {
 
   try {
     // Eliminar el usuario de la base de datos
-    await usuario.destroy();
-
+    await usuario.update({
+      estado: 'Desconectado',
+    });
     // Responder con un mensaje de éxito
     return res.status(200).json({
       status: 'success',

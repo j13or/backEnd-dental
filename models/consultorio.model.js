@@ -14,6 +14,15 @@ const Consultorio = db.define('consultorio', {
   },
   direccion: {
     type: DataTypes.STRING,
+    unique: true,
+    allowNull: false,
+  },
+  telefono: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  linkGoogleMaps: {
+    type: DataTypes.TEXT,
     allowNull: false,
   },
 });

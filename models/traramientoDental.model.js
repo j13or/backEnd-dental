@@ -8,7 +8,7 @@ const TratamientoDental = db.define('tratamientoDental', {
     allowNull: false,
     type: DataTypes.INTEGER,
   },
-  consultaId: {
+  planTratamientoId: {
     type: DataTypes.INTEGER,
     allowNull: false,
   },

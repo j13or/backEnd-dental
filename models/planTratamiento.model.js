@@ -1,14 +1,14 @@
 import { DataTypes } from 'sequelize';
 import { db } from '../config/db.config.js';
 
-const Consulta = db.define('consulta', {
+const PlanTratamiento = db.define('planTratamiento', {
   id: {
     primaryKey: true,
     autoIncrement: true,
     allowNull: false,
     type: DataTypes.INTEGER,
   },
-  planTratamientoId: {
+  pacienteId: {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
@@ -20,14 +20,26 @@ const Consulta = db.define('consulta', {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  descripcion: {
-    type: DataTypes.STRING,
+  observaciones: {
+    type: DataTypes.TEXT,
     allowNull: false,
   },
-  pago: {
-    type: DataTypes.STRING,
+  montoTotal: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  acuenta: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  deuda: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  linkFile: {
+    type: DataTypes.TEXT,
     allowNull: false,
   },
 });
 
-export { Consulta };
+export { PlanTratamiento };

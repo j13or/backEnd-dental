@@ -3,26 +3,17 @@ import express from 'express';
 import * as consultaMiddleware from '../middlewares/consulta.middleware.js';
 import * as consultaController from '../controllers/consulta.controllers.js';
 
-import * as pacienteMiddleware from '../middlewares/paciente.middleware.js';
-import { upload } from '../utils/multer.js';
+import * as planTratamientoMiddleware from '../middlewares/planTratamiento.middleware.js';
 
 const router = express.Router();
 
-router.get('/consultorio/:id', consultaController.findAll);
-router.get('/consultas/:id', consultaController.findAllConsultasId);
-
-router.get(
-  '/paciente/:id',
-  pacienteMiddleware.validExistPaciente,
-  consultaController.findAllPacienteId
-);
+router.get('/plan-tratamiento/:id', consultaController.findAll);
 
 router
   .route('/:id')
   .patch(consultaMiddleware.validExistConsulta, consultaController.update)
   .post(
-    upload.single('linkFile'),
-    pacienteMiddleware.validExistPaciente,
+    planTratamientoMiddleware.validExistPlanTratamiento,
     consultaController.create
   )
   .get(consultaMiddleware.validExistConsulta, consultaController.findOne)

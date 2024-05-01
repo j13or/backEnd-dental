@@ -2,7 +2,7 @@ import { AppError } from '../utils/AppError.js';
 import { Cita } from '../models/cita.model.js';
 import { Paciente } from '../models/paciente.model.js';
 
-export const findAll = async (req, res) => {
+export const findAll = async (req, res, next) => {
   const { fecha } = req.query;
   const { id } = req.params;
 

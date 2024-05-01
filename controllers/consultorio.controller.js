@@ -39,11 +39,13 @@ export const findOne = async (req, res, next) => {
 
 export const create = async (req, res, next) => {
   try {
-    const { nombreConsultorio, direccion } = req.body;
+    const { nombreConsultorio, direccion, telefono, linkGoogleMaps } = req.body;
 
     const consultorio = await Consultorio.create({
       nombreConsultorio,
       direccion,
+      telefono,
+      linkGoogleMaps,
     });
 
     return res.status(201).json({
@@ -65,11 +67,13 @@ export const create = async (req, res, next) => {
 export const update = async (req, res, next) => {
   try {
     const { consultorio } = req;
-    const { nombreConsultorio, direccion } = req.body;
+    const { nombreConsultorio, direccion, telefono, linkGoogleMaps } = req.body;
 
     await consultorio.update({
       nombreConsultorio,
       direccion,
+      telefono,
+      linkGoogleMaps,
     });
 
     return res.status(200).json({
