@@ -1,26 +1,22 @@
 import { DataTypes } from 'sequelize';
 import { db } from '../config/db.config.js';
 
-const CitaEnLinea = db.define('citaEnLinea', {
+const PagosTratamiento = db.define('pagosTratamiento', {
   id: {
     primaryKey: true,
     autoIncrement: true,
     allowNull: false,
     type: DataTypes.INTEGER,
   },
+  planTratamientoId: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
   consultorioId: {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
-  nombresApellidos: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  correo: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  telefono: {
+  titulo: {
     type: DataTypes.STRING,
     allowNull: false,
   },
@@ -28,17 +24,10 @@ const CitaEnLinea = db.define('citaEnLinea', {
     type: DataTypes.STRING,
     allowNull: false,
   },
-
-  comentario: {
-    type: DataTypes.TEXT,
+  pago: {
+    type: DataTypes.STRING,
     allowNull: false,
-  },
-
-  estado: {
-    type: DataTypes.ENUM('activo', 'inactivo', 'confirmar'),
-    allowNull: false,
-    defaultValue: 'confirmar',
   },
 });
 
-export { CitaEnLinea };
+export { PagosTratamiento };

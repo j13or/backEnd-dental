@@ -48,15 +48,8 @@ export const findOne = async (req, res) => {
 export const create = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const {
-      nombresApellidos,
-      correo,
-      telefono,
-      fecha,
-      hora,
-      comentario,
-      estado,
-    } = req.body;
+    const { nombresApellidos, correo, telefono, fecha, comentario, estado } =
+      req.body;
 
     const citaEnLinea = await CitaEnLinea.create({
       consultorioId: id,
@@ -64,7 +57,6 @@ export const create = async (req, res, next) => {
       correo,
       telefono,
       fecha,
-      hora,
       comentario,
       estado,
     });
@@ -84,22 +76,14 @@ export const create = async (req, res, next) => {
 export const update = async (req, res, next) => {
   try {
     const { citaEnLinea } = req;
-    const {
-      nombresApellidos,
-      correo,
-      telefono,
-      fecha,
-      hora,
-      comentario,
-      estado,
-    } = req.body;
+    const { nombresApellidos, correo, telefono, fecha, comentario, estado } =
+      req.body;
 
     await citaEnLinea.update({
       nombresApellidos,
       correo,
       telefono,
       fecha,
-      hora,
       comentario,
       estado,
     });

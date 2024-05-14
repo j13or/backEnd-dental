@@ -1,21 +1,20 @@
 import { AppError } from '../utils/AppError.js';
-import { Consulta } from '../models/consulta.model.js';
+import { TipoSangre } from '../models/tipoSangre.mode.js';
 
-export const findAll = async (req, res, next) => {
+export const findAll = async (req, res) => {
   try {
     const { id } = req.params;
-    const consultas = await Consulta.findAll({
-      where: {
-        planTratamientoId: id,
-      },
+
+    const tiposSangre = await TipoSangre.findAll({
+      where: { consultorioId: id },
       order: [['id', 'ASC']],
     });
 
     return res.status(200).json({
       status: 'success',
-      message: 'Todas los tratamientos Dental',
-      results: consultas.length,
-      consultas,
+      message: 'Todas los tipos deSangre Dental',
+      results: tiposSangre.length,
+      tiposSangre,
     });
   } catch (error) {
     return next(
@@ -29,16 +28,16 @@ export const findAll = async (req, res, next) => {
 
 export const findOne = async (req, res) => {
   try {
-    const { consulta } = req;
+    const { tipoSangre } = req;
 
     return res.status(200).json({
       status: 'success',
-      message: 'la consulta  se llamo exitosamente ',
-      consulta,
+      message: 'el tipoSangre  se llamo exitosamente ',
+      tipoSangre,
     });
   } catch (error) {
     return next(
-      new AppError(`Error al llamar la consulta: ${error.message}`, 500)
+      new AppError(`Error al llamar a el tipoSangre : ${error.message}`, 500)
     );
   }
 };
@@ -46,41 +45,39 @@ export const findOne = async (req, res) => {
 export const create = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { titulo, descripcion, consultorioId } = req.body;
+    const { nombre, consultorioId } = req.body;
 
-    const consulta = await Consulta.create({
-      planTratamientoId: id,
-      titulo,
-      descripcion,
+    const tipoSangre = await TipoSangre.create({
+      consultorioId: id,
+      nombre,
       consultorioId,
     });
 
     return res.status(201).json({
       status: 'success',
-      message: 'la consulta  se creó exitosamente',
-      consulta,
+      message: 'El tipoSangre  se creó exitosamente',
+      tipoSangre,
     });
   } catch (error) {
     return next(
-      new AppError(`Error al crear la consulta: ${error.message}`, 500)
+      new AppError(`Error al crear el tipoSangre : ${error.message}`, 500)
     );
   }
 };
 
 export const update = async (req, res, next) => {
   try {
-    const { consulta } = req;
-    const { titulo, descripcion } = req.body;
+    const { tipoSangre } = req;
+    const { nombre } = req.body;
 
-    await consulta.update({
-      titulo,
-      descripcion,
+    await tipoSangre.update({
+      nombre,
     });
 
     return res.status(200).json({
       status: 'success',
-      message: 'Los datos del consulta Dental se actualizaron exitosamente',
-      consulta,
+      message: 'Los datos del tipoSangre  se actualizaron exitosamente',
+      tipoSangre,
     });
   } catch (error) {
     // Manejo de errores
@@ -94,16 +91,16 @@ export const update = async (req, res, next) => {
 };
 
 export const deleteElement = async (req, res, next) => {
-  const { consulta } = req;
+  const { tipoSangre } = req;
 
   try {
-    await consulta.destroy();
+    await tipoSangre.destroy();
 
     return res.status(200).json({
       status: 'success',
-      message: 'El consulta se  elimino exitosamente',
+      message: 'El tipoSangre se  elimino exitosamente',
     });
   } catch (error) {
-    return next(new AppError(`Hubo un error al eliminar el tratamiento`, 500));
+    return next(new AppError(`Hubo un error al eliminar el tipoSangre`, 500));
   }
 };

@@ -3,6 +3,7 @@ import { Usuario } from '../models/usuario.model.js';
 import bcrypt from 'bcryptjs';
 import { generateJWT } from '../utils/jwt.js';
 import { Consultorio } from '../models/consultorio.model.js';
+import { where } from 'sequelize';
 
 export const findAll = async (req, res, next) => {
   try {
@@ -68,7 +69,20 @@ export const signup = async (req, res, next) => {
     const salt = await bcrypt.genSalt(12);
     const hashedPassword = await bcrypt.hash(contraseña, salt);
 
-    // Creación del usuario en la base de datos
+    // Verificar si ya existe un administrador para este consultorio
+    const existAdmin = await Usuario.findOne({
+      where: {
+        rol: 'Administrador',
+        consultorioId: id,
+      },
+    });
+    if (existAdmin) {
+      return next(
+        new AppError(`Ya existe un administrador para este consultorio`, 500)
+      );
+    }
+
+    // Crear el usuario
     let usuario;
     if (rol === 'SuperAdmin') {
       usuario = await Usuario.create({
@@ -105,7 +119,7 @@ export const signup = async (req, res, next) => {
     // Manejo de errores
     if (error.name === 'SequelizeValidationError') {
       const errors = error.errors.map((err) => err.message);
-      return next(new AppError(`Datos inválidos: ${errors(', ')}`, 400));
+      return next(new AppError(`Datos inválidos: ${errors.join(', ')}`, 400));
     }
     return next(
       new AppError(`Error al crear el usuario: ${error.message}`, 500)

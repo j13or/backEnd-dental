@@ -1,10 +1,16 @@
 import { Consultorio } from '../models/consultorio.model.js';
+import { Usuario } from '../models/usuario.model.js';
 import { AppError } from '../utils/AppError.js';
 
 export const findAll = async (req, res, next) => {
   try {
     const consultorios = await Consultorio.findAll({
       order: [['id', 'ASC']],
+      include: [
+        {
+          model: Usuario,
+        },
+      ],
     });
 
     return res.status(200).json({

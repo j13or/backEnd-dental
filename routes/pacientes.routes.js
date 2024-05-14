@@ -6,6 +6,7 @@ import * as autenticaciónMiddleware from '../middlewares/autenticación.middlew
 
 const router = express.Router();
 
+router.get('/dni/:dni', pacienteController.findOneDni);
 router.use(autenticaciónMiddleware.proteger);
 
 router.get('/consultorio/:id', pacienteController.findAll);

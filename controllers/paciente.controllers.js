@@ -62,6 +62,28 @@ export const findOne = async (req, res) => {
   }
 };
 
+export const findOneDni = async (req, res) => {
+  try {
+    const { dni } = req.params;
+
+    const paciente = await Paciente.findOne({
+      where: {
+        carnet: dni,
+      },
+    });
+
+    return res.status(200).json({
+      status: 'success',
+      message: 'el paciente se llamo exitosamente ',
+      paciente,
+    });
+  } catch (error) {
+    return next(
+      new AppError(`Error al llamar al paciente: ${error.message}`, 500)
+    );
+  }
+};
+
 export const create = async (req, res, next) => {
   try {
     const {
