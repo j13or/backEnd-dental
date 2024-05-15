@@ -69,14 +69,15 @@ export const signup = async (req, res, next) => {
     const salt = await bcrypt.genSalt(12);
     const hashedPassword = await bcrypt.hash(contraseña, salt);
 
-    // Verificar si ya existe un administrador para este consultorio
-    const existAdmin = await Usuario.findOne({
+    const existAdmin = await Usuario.findAll({
       where: {
-        rol: 'Administrador',
         consultorioId: id,
+        rol: 'Administrador',
       },
     });
-    if (existAdmin) {
+
+    // Verificar si ya existe un administrador para este consultorio
+    if (rol === 'Administrador' && existAdmin.length > 0) {
       return next(
         new AppError(`Ya existe un administrador para este consultorio`, 500)
       );
