@@ -18,6 +18,12 @@ router.patch(
   usuarioController.updatePassword
 );
 
+router.get(
+  '/reset-password/:id',
+  usuarioMiddleware.validExistUsuario,
+  usuarioController.resetPassword
+);
+
 router
   .route('/:id')
   .patch(usuarioMiddleware.validExistUsuario, usuarioController.update)

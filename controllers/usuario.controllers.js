@@ -63,11 +63,11 @@ export const findOne = async (req, res, next) => {
 export const signup = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const { nombres, apellidos, email, contraseña, rol, telefono } = req.body;
+    const { nombres, apellidos, email, carnet, rol, telefono } = req.body;
 
     // Generación del hash de la contraseña
     const salt = await bcrypt.genSalt(12);
-    const hashedPassword = await bcrypt.hash(contraseña, salt);
+    const hashedPassword = await bcrypt.hash(carnet, salt);
 
     const existAdmin = await Usuario.findAll({
       where: {
@@ -88,6 +88,7 @@ export const signup = async (req, res, next) => {
     if (rol === 'SuperAdmin') {
       usuario = await Usuario.create({
         consultorioId: null,
+        carnet,
         nombres,
         apellidos,
         email,
@@ -98,6 +99,7 @@ export const signup = async (req, res, next) => {
     } else {
       usuario = await Usuario.create({
         consultorioId: id,
+        carnet,
         nombres,
         apellidos,
         email,
@@ -196,11 +198,47 @@ export const updatePassword = async (req, res, next) => {
   }
 };
 
+export const resetPassword = async (req, res, next) => {
+  try {
+    const { usuario } = req;
+
+    const salt = await bcrypt.genSalt(12);
+    const hashedPassword = await bcrypt.hash(usuario.carnet, salt);
+
+    await usuario.update({
+      contraseña: hashedPassword,
+    });
+
+    // Responder con los datos actualizados del usuario
+    return res.status(200).json({
+      status: 'success',
+      message: 'Los datos del usuario se actualizaron exitosamente',
+      usuario,
+    });
+  } catch (error) {
+    // Manejo de errores
+    return next(
+      new AppError(
+        `Hubo un error al actualizar sus datos: ${error.message}`,
+        500
+      )
+    );
+  }
+};
+
 export const update = async (req, res, next) => {
   try {
     // Extraer datos del cuerpo de la solicitud y el usuario autenticado
-    const { nombres, apellidos, email, rol, telefono, consultorioId, estado } =
-      req.body;
+    const {
+      nombres,
+      carnet,
+      apellidos,
+      email,
+      rol,
+      telefono,
+      consultorioId,
+      estado,
+    } = req.body;
     const { usuario } = req;
 
     // Actualizar los datos del usuario
@@ -208,6 +246,7 @@ export const update = async (req, res, next) => {
       consultorioId,
       nombres,
       apellidos,
+      carnet,
       rol,
       email,
       telefono,

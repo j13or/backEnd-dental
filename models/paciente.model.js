@@ -23,11 +23,11 @@ const Paciente = db.define('paciente', {
   },
   apellidoPaterno: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: true,
   },
   apellidoMaterno: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: true,
   },
 
   genero: {

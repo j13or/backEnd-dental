@@ -12,6 +12,10 @@ const Usuario = db.define('usuario', {
     type: DataTypes.INTEGER,
     allowNull: true,
   },
+  carnet: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
   nombres: {
     type: DataTypes.STRING,
     allowNull: false,

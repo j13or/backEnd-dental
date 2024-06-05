@@ -1,6 +1,7 @@
 import { AppError } from '../utils/AppError.js';
 import { Paciente } from '../models/paciente.model.js';
 import { Op } from 'sequelize';
+import { Consultorio } from '../models/consultorio.model.js';
 
 export const findAll = async (req, res, next) => {
   const { search } = req.query;
@@ -14,6 +15,7 @@ export const findAll = async (req, res, next) => {
         where: { consultorioId: id },
         limit: 10,
         order: [['createdAt', 'DESC']],
+        include: { model: Consultorio },
       });
     } else {
       pacientes = await Paciente.findAll({
@@ -27,6 +29,7 @@ export const findAll = async (req, res, next) => {
             { carnet: { [Op.like]: `%${search}%` } },
           ],
         },
+        include: { model: Consultorio },
       });
     }
 
@@ -137,6 +140,7 @@ export const update = async (req, res, next) => {
       fechaDeNacimiento,
       alergia,
       tipoDeSangre,
+      consultorioId,
     } = req.body;
 
     await paciente.update({
@@ -149,6 +153,7 @@ export const update = async (req, res, next) => {
       fechaDeNacimiento,
       alergia,
       tipoDeSangre,
+      consultorioId,
     });
 
     return res.status(200).json({

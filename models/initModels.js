@@ -10,6 +10,9 @@ const initModel = () => {
   Consultorio.hasMany(Usuario, { foreignKey: 'consultorioId' });
   Usuario.belongsTo(Consultorio, { foreignKey: 'consultorioId' });
 
+  Consultorio.hasMany(Paciente, { foreignKey: 'consultorioId' });
+  Paciente.belongsTo(Consultorio, { foreignKey: 'consultorioId' });
+
   Paciente.hasMany(Consulta, { foreignKey: 'pacienteId' });
   Consulta.belongsTo(Paciente, { foreignKey: 'pacienteId' });
 
