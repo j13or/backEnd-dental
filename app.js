@@ -58,7 +58,7 @@ app.use('/api/v1/plan-tratamiento', planTratamientoRouter);
 app.use('/api/v1/chat-bot', iaRouter);
 
 // Configurar la carpeta de archivos estáticos
-app.use('/api/v1/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/api/v1/upload', express.static(path.join(__dirname, 'uploads')));
 
 app.all('*', (req, res, next) => {
   return next(

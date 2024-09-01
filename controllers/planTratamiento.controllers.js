@@ -148,16 +148,30 @@ export const create = async (req, res, next) => {
     const acuenta = Number(dataJson.acuenta);
     const deuda = montoTotal - acuenta;
 
-    const planTratamiento = await PlanTratamiento.create({
-      pacienteId: id,
-      titulo: dataJson.titulo,
-      observaciones: dataJson.observaciones,
-      montoTotal,
-      acuenta,
-      deuda,
-      consultorioId,
-      linkFile,
-    });
+    let planTratamiento;
+    if (file) {
+      planTratamiento = await PlanTratamiento.create({
+        pacienteId: id,
+        titulo: dataJson.titulo,
+        observaciones: dataJson.observaciones,
+        montoTotal,
+        acuenta,
+        deuda,
+        consultorioId,
+        linkFile,
+      });
+    } else {
+      planTratamiento = await PlanTratamiento.create({
+        pacienteId: id,
+        titulo: dataJson.titulo,
+        observaciones: dataJson.observaciones,
+        montoTotal,
+        acuenta,
+        deuda,
+        consultorioId,
+        linkFile,
+      });
+    }
 
     // Crear un array de promesas para la creación de tratamientos dentales
     const promises = tratamientoDentalJson.map((tratamientoDental) => {
