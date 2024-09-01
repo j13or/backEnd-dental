@@ -6,6 +6,14 @@ import xss from 'xss-clean';
 import cors from 'cors';
 import { globalErrorHandler } from './controllers/error.controllers.js';
 import { AppError } from './utils/AppError.js';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+// Obtener la ruta del archivo actual
+const __filename = fileURLToPath(import.meta.url);
+// Obtener el directorio del archivo actual
+const __dirname = dirname(__filename);
 
 import { usuarioRouter } from './routes/usuario.routes.js';
 import { citaRouter } from './routes/cita.routes.js';
@@ -26,7 +34,7 @@ app.use(express.json());
 const limiter = rateLimit({
   max: 100000,
   windowMs: 60 * 60 * 1000,
-  message: 'Too many request from this Ip, please try again in an hour!',
+  message: 'Too many requests from this IP, please try again in an hour!',
 });
 
 app.use(helmet());
@@ -48,6 +56,8 @@ app.use('/api/v1/pagos', pagoTratamientoRouter);
 app.use('/api/v1/tratamiento-dental', traramientoDentalRouter);
 app.use('/api/v1/plan-tratamiento', planTratamientoRouter);
 app.use('/api/v1/chat-bot', iaRouter);
+
+// Configurar la carpeta de archivos estáticos
 app.use('/api/v1/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.all('*', (req, res, next) => {
