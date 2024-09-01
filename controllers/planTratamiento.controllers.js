@@ -137,7 +137,7 @@ export const create = async (req, res, next) => {
     const tratamientoDentalJson = JSON.parse(tratamientosDental);
 
     const file = req.file;
-    const fileName = file.filename;
+    const fileName = file?.filename;
 
     const host = req.get('host');
     const protocol = req.protocol;
@@ -169,7 +169,6 @@ export const create = async (req, res, next) => {
         acuenta,
         deuda,
         consultorioId,
-        linkFile,
       });
     }
 
