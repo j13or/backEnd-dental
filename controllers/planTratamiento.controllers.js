@@ -137,12 +137,6 @@ export const create = async (req, res, next) => {
     const tratamientoDentalJson = JSON.parse(tratamientosDental);
 
     const file = req.file;
-    const fileName = file?.filename;
-
-    const host = req.get('host');
-    const protocol = req.protocol;
-
-    const linkFile = `${protocol}://${host}/api/v1/upload/${fileName}`;
 
     const montoTotal = Number(dataJson.montoTotal);
     const acuenta = Number(dataJson.acuenta);
@@ -150,6 +144,13 @@ export const create = async (req, res, next) => {
 
     let planTratamiento;
     if (file) {
+      const fileName = file.filename;
+
+      const host = req.get('host');
+      const protocol = req.protocol;
+
+      const linkFile = `${protocol}://${host}/api/v1/upload/${fileName}`;
+
       planTratamiento = await PlanTratamiento.create({
         pacienteId: id,
         titulo: dataJson.titulo,
