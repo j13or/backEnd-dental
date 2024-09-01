@@ -1,0 +1,1063 @@
+[
+  {
+    "category": "dental",
+    "input": "hola",
+    "output": "¡Hola! ¿En qué puedo ayudarte hoy?"
+  },
+  {
+    "category": "dental",
+    "input": "buenos días",
+    "output": "¡Buenos días! ¿Cómo puedo asistirte hoy?"
+  },
+  {
+    "category": "dental",
+    "input": "buenas tardes",
+    "output": "¡Buenas tardes! ¿Qué puedo hacer por ti?"
+  },
+  {
+    "category": "dental",
+    "input": "buenas noches",
+    "output": "¡Buenas noches! ¿En qué puedo ayudarte?"
+  },
+  {
+    "category": "dental",
+    "input": "cómo estás",
+    "output": "Estoy bien, gracias. ¿Y tú, cómo estás?"
+  },
+  {
+    "category": "dental",
+    "input": "qué tal",
+    "output": "Todo bien, gracias por preguntar. ¿Cómo puedo ayudarte?"
+  },
+  {
+    "category": "dental",
+    "input": "gracias",
+    "output": "De nada. Si necesitas algo más, no dudes en decirlo."
+  },
+  {
+    "category": "dental",
+    "input": "adiós",
+    "output": "¡Adiós! Que tengas un buen día. Si necesitas algo más, aquí estaré."
+  },
+  {
+    "category": "dental",
+    "input": "hasta luego",
+    "output": "¡Hasta luego! No dudes en volver si necesitas más ayuda."
+  },
+  {
+    "category": "dental",
+    "input": "cuántos años tiene un perro",
+    "output": "La edad de un perro en años humanos varía según el tamaño y la raza, pero como regla general, un año de vida de un perro equivale a aproximadamente siete años humanos."
+  },
+  {
+    "category": "general",
+    "input": "cuándo es el próximo feriado",
+    "output": "El próximo feriado varía según tu ubicación. Puedes consultar un calendario local para obtener información específica."
+  },
+  {
+    "category": "general",
+    "input": "dolor de cabeza",
+    "output": "Podría ser una migraña o un resfriado. Consulta con un médico si persiste."
+  },
+  {
+    "category": "dental",
+    "input": "dolor de muelas",
+    "output": "Podría ser una caries o un problema en las encías. Consulta a tu dentista."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué técnica de cepillado dental es mejor?",
+    "output": "una de las preguntas más recurrentes es la de cómo hay que lavarse los dientes. pues bien, hoy en día existen varias técnicas de cepillado. todas estas técnicas son buenas y eficaces. no obstante, cada una de ellas es especial para un caso concreto, por lo que cada paciente tendrá que utilizar la técnica que mejor le vaya para su caso. sin embargo, a modo general, una de las técnicas más utilizadas y recomendadas es la de colocar las cerdas del cepillo en el fondo del surco gingival con una inclinación de unos 45 grados respecto el diente y mediante la realización de movimientos vibratorios y rotatorios se limpie el diente. a continuación, se tiene que realizar un barrido hacia la zona incisal y oclusal del diente."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué cepillo utilizar?",
+    "output": "en cuanto al tipo de cepillo a utilizar existen muchas dudas entre cual es mejor el eléctrico o el manual. pues bien, muchos dentistas recomiendan el uso del cepillo eléctrico ya que es más cómodo y elimina más placa. no obstante, depende mucho de cada uno, por lo que lo recomendable es preguntar a vuestro dentista para saber cuál es mejor para tu caso en concreto."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo limpiar el cepillo?",
+    "output": "independientemente se utilice un cepillo eléctrico o manual, éste debe limpiarse adecuadamente cada vez que se utilice. para limpiarlo de forma correcta es necesario enjuagarlo y frotar las celdas bien para eliminar todos los restos de microorganismos, de comida y placa. a continuación, se debe sacudir el cepillo para eliminar el exceso de agua y se debe guardar en un lugar en un lugar aireado, en posición vertical y las cerdas hacia arriba."
+  },
+  {
+    "category": "dental",
+    "input": "¿durante cuanto tiempo y cuantas veces se tiene que realizar el cepillado?",
+    "output": "es recomendable como mínimo lavarse los dientes 2 veces al día, una vez por la mañana al levantarse y otra por la noche. no obstante, lo ideal sería lavarse los dientes tres veces al día, una por la mañana, otra al medio día y otra por la noche. la limpieza de por la noche es muy importante, por lo que ésta no se puede olvidar. en cuanto al tiempo de duración del lavado, lo ideal es que dure como mínimo cada lavado 3 minutos, ya que a partir de estos tres minutos es cuando más placa se elimina."
+  },
+  {
+    "category": "dental",
+    "input": "¿es importante cepillarse antes de dormir?",
+    "output": "como hemos indicado en la pregunta anterior, es imprescindible lavarse los dientes antes de irse a la cama, ya que por la noche se suele tener la boca muchas horas cerrada, provocamos menos saliva y por ende somos más sensibles a las bacterias."
+  },
+  {
+    "category": "dental",
+    "input": "¿cada cuánto se debe cambiar el cepillo de dientes?",
+    "output": "otro aspecto muy importante a tener en cuenta es cada cuanto tiempo se tiene que cambiar el cepillo de dientes. pues bien, todo depende del tipo de cepillo de dientes, pero todos ellos del uso se van estropeando y con ello se pierde eficacia en el limpiado. en concreto lo ideal sería cambiarlos cada 2 o 3 meses."
+  },
+  {
+    "category": "dental",
+    "input": "¿se tiene que lavar los dientes nada más comer?",
+    "output": "al contrario de lo que piensan muchas personas, no debemos limpiarnos los dientes nada más comer, sino que debemos esperar un tiempo determinado antes de lavarlos. en concreto, se debe esperar unos 30 minutos. si realizamos el cepillado nada más comer podremos dañar el esmalte de los dientes y repartir el ácido por los dientes."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué pasta de dientes debemos utilizar?",
+    "output": "en cuanto a la pasta dentífrica no debemos utilizar cualquiera, siempre tenemos que tener presente que tipo de pasta necesitamos. para ello se debe consultar a un dentista. no obstante, a modo general, la pasta de dientes que se debe escoger debe tener flúor ya que éste es necesario para los dientes y ayuda a combatir contra las caries."
+  },
+  {
+    "category": "dental",
+    "input": "¿se debe limpiar la lengua?",
+    "output": "la lengua es la gran olvidada cuando realizamos una limpieza, pero es imprescindible que la limpiemos adecuadamente ya que ésta tiene muchas bacterias. para limpiarla lo ideal es utilizar un raspador lingual y hacerlo de atrás hacia delante de la lengua."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuánta pasta de dientes debo utilizar?",
+    "output": "muchas personas se exceden a la hora de utilizar la pasta de dientes. es importante explicar que no es necesario ponerse mucha pasta de dientes para lavarlo, solamente un poco es suficiente. es decir, que no es cierto que cuanto más pasta de dientes se utilice más limpios quedan los dientes."
+  },
+  {
+    "category": "dental",
+    "input": "¿a qué edad deben de cepillarse los dientes los niños?",
+    "output": "una de las preguntas más frecuentes es la de cuándo deben empezar a lavarse los dientes los niños. pues bien, deben de empezar en cuanto les salga el primer diente. se debe de utilizar una pasta de dientes sin flúor."
+  },
+  {
+    "category": "dental",
+    "input": "¿es necesario hacer una limpieza profesional?",
+    "output": "aunque se realice una muy buen higiene dental y un buen cepillado, siempre es recomendable acudir a un dentista para que te realice una limpieza profesional, ya que eliminan restos que nosotros no podemos. si tenemos una salud dental buena sería recomendable hacerse una limpieza profesional cada 6 meses, pero en aquellos casos que se tenga algún problema de salud en la misma, sería necesario acudir cada 2 o 3 meses. con todas estas dudas resueltas, esperamos que sepas un poco mejor en qué consiste la higiene dental y cómo mejorar, en términos generales, vuestra salud bucodental."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué técnica de cepillado dental es mejor?",
+    "output": "una de las preguntas más recurrentes es la de cómo hay que lavarse los dientes. pues bien, hoy en día existen varias técnicas de cepillado. todas estas técnicas son buenas y eficaces. no obstante, cada una de ellas es especial para un caso concreto, por lo que cada paciente tendrá que utilizar la técnica que mejor le vaya para su caso. sin embargo, a modo general, una de las técnicas más utilizadas y recomendadas es la de colocar las cerdas del cepillo en el fondo del surco gingival con una inclinación de unos 45 grados respecto el diente y mediante la realización de movimientos vibratorios y rotatorios se limpie el diente. a continuación, se tiene que realizar un barrido hacia la zona incisal y oclusal del diente."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué cepillo utilizar?",
+    "output": "en cuanto al tipo de cepillo a utilizar existen muchas dudas entre cual es mejor el eléctrico o el manual. pues bien, muchos dentistas recomiendan el uso del cepillo eléctrico ya que es más cómodo y elimina más placa. no obstante, depende mucho de cada uno, por lo que lo recomendable es preguntar a vuestro dentista para saber cuál es mejor para tu caso en concreto."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo limpiar el cepillo?",
+    "output": "independientemente se utilice un cepillo eléctrico o manual, éste debe limpiarse adecuadamente cada vez que se utilice. para limpiarlo de forma correcta es necesario enjuagarlo y frotar las celdas bien para eliminar todos los restos de microorganismos, de comida y placa. a continuación, se debe sacudir el cepillo para eliminar el exceso de agua y se debe guardar en un lugar en un lugar aireado, en posición vertical y las cerdas hacia arriba."
+  },
+  {
+    "category": "dental",
+    "input": "¿durante cuanto tiempo y cuantas veces se tiene que realizar el cepillado?",
+    "output": "es recomendable como mínimo lavarse los dientes 2 veces al día, una vez por la mañana al levantarse y otra por la noche. no obstante, lo ideal sería lavarse los dientes tres veces al día, una por la mañana, otra al medio día y otra por la noche. la limpieza de por la noche es muy importante, por lo que ésta no se puede olvidar. en cuanto al tiempo de duración del lavado, lo ideal es que dure como mínimo cada lavado 3 minutos, ya que a partir de estos tres minutos es cuando más placa se elimina."
+  },
+  {
+    "category": "dental",
+    "input": "¿es importante cepillarse antes de dormir?",
+    "output": "como hemos indicado en la pregunta anterior, es imprescindible lavarse los dientes antes de irse a la cama, ya que por la noche se suele tener la boca muchas horas cerrada, provocamos menos saliva y por ende somos más sensibles a las bacterias."
+  },
+  {
+    "category": "dental",
+    "input": "¿cada cuánto se debe cambiar el cepillo de dientes?",
+    "output": "otro aspecto muy importante a tener en cuenta es cada cuanto tiempo se tiene que cambiar el cepillo de dientes. pues bien, todo depende del tipo de cepillo de dientes, pero todos ellos del uso se van estropeando y con ello se pierde eficacia en el limpiado. en concreto lo ideal sería cambiarlos cada 2 o 3 meses."
+  },
+  {
+    "category": "dental",
+    "input": "¿se tiene que lavar los dientes nada más comer?",
+    "output": "al contrario de lo que piensan muchas personas, no debemos limpiarnos los dientes nada más comer, sino que debemos esperar un tiempo determinado antes de lavarlos. en concreto, se debe esperar unos 30 minutos. si realizamos el cepillado nada más comer podremos dañar el esmalte de los dientes y repartir el ácido por los dientes."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué pasta de dientes debemos utilizar?",
+    "output": "en cuanto a la pasta dentífrica no debemos utilizar cualquiera, siempre tenemos que tener presente que tipo de pasta necesitamos. para ello se debe consultar a un dentista. no obstante, a modo general, la pasta de dientes que se debe escoger debe tener flúor ya que éste es necesario para los dientes y ayuda a combatir contra las caries."
+  },
+  {
+    "category": "dental",
+    "input": "¿se debe limpiar la lengua?",
+    "output": "la lengua es la gran olvidada cuando realizamos una limpieza, pero es imprescindible que la limpiemos adecuadamente ya que ésta tiene muchas bacterias. para limpiarla lo ideal es utilizar un raspador lingual y hacerlo de atrás hacia delante de la lengua."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuánta pasta de dientes debo utilizar?",
+    "output": "muchas personas se exceden a la hora de utilizar la pasta de dientes. es importante explicar que no es necesario ponerse mucha pasta de dientes para lavarlo, solamente un poco es suficiente. es decir, que no es cierto que cuanto más pasta de dientes se utilice más limpios quedan los dientes."
+  },
+  {
+    "category": "dental",
+    "input": "¿a qué edad deben de cepillarse los dientes los niños?",
+    "output": "una de las preguntas más frecuentes es la de cuándo deben empezar a lavarse los dientes los niños. pues bien, deben de empezar en cuanto les salga el primer diente. se debe de utilizar una pasta de dientes sin flúor."
+  },
+  {
+    "category": "dental",
+    "input": "se me seca mucho la boca ¿es un problema?",
+    "output": "padecer de boca seca puede provocar: irritación de los tejidos blandos, aumento en la incidencia de caries, acumulación de placa bacteriana generar enfermedades periodontales, dificultad para tragar, hablar, empeoramiento de la digestión… te aconsejamos seguir una serie de pautas como por ejemplo: óptima higiene bucal, evitar bebidas alcohólicas o con cafeína, controlar la dieta evitando carbohidratos y aumentando la ingesta de fruta y verdura, beber mucha agua, masticar chicle sin azúcar y no fumar. si quieres saber más sobre este tema, puedes leer este artículo."
+  },
+  {
+    "category": "dental",
+    "input": "tengo manchas en los dientes ¿puedo eliminarlas?",
+    "output": "con la edad es posible que los dientes vayan perdiendo su brillo, apareciendo manchas o mostrando un color mas amarillento. sin embargo, son nuestros propios hábitos los que nos empeorarán el aspecto de nuestra sonrisa. el consumo de ciertos alimentos, que numeramos en este artículo, es uno de ellos. podemos evitar la aparición de manchas mediante una higiene bucodental profesional y teniendo una escrupulosa higiene en casa. en casos de dientes ya muy amarillentos, es posible hacer un blanqueamiento con tu dentista de confianza."
+  },
+  {
+    "category": "dental",
+    "input": "mis dientes se mueven ¿se van a caer?",
+    "output": "si no se trata, posiblemente, acaben cayendo. esto es debido a una gran perdida ósea alrededor del diente, consecuencia de la periodontitis, acumulación de sarro debajo de la encía. en seguida que perciba el movimiento, debe visitarnos, según el grado de movimiento, hay diferentes soluciones. cuanto antes lo detectemos, más sencilla será la solución."
+  },
+  {
+    "category": "dental",
+    "input": "¿tengo que quitarme las muelas del juicio?",
+    "output": "los terceros molares suelen salir entre los 18 y 23 años. si erupcionan en su totalidad, tienen espacio y no nos causan ningún problema, no hay motivo para su extracción. sin embargo, si estaría indicado extraerlos si provocan dolor acentuado, inflamación crónica, infección o presencia de quistes, afectación del molar adyacente o si está indicado para favorecer un tratamiento con ortodoncia. lo importante es acudir a tu dentista de confianza para hacer un seguimiento y tener las muelas del juicio controladas."
+  },
+  {
+    "category": "dental",
+    "input": "me duele al comer cosas frías, ¿qué puedo hacer?",
+    "output": "puede ser debido a desgastes en los dientes, caries, recesiones de las encías, obturación reciente… no te preocupes, tiene solución. evita alimentos y bebidas frías y solicítanos una cita en nuestra clínica dental en palma para que evaluemos, personalmente, tu caso y lo solucionemos."
+  },
+  {
+    "category": "dental",
+    "input": "me huele el aliento, ¿cómo lo soluciono?",
+    "output": "el mal aliento puede convertirse en un problema de carácter social, pero no te preocupes, tiene solución. si es provocado por la mala higiene bucal, aconsejamos pasarse el cepillo o un limpiador lingual por la lengua y usar un colutorio específico; si es causado por una acumulación de sarro, la solución puede ser una limpieza bucal, si es por gingivitis, la trataremos… otros motivos podrían ser: problemas gástricos, el abuso de alimentos concretos o el uso de algún tipo de medicamento. visita nuestra clínica dental en palma para poder hacer un diagnóstico personalizado y ofrecerle la mejor solución."
+  },
+  {
+    "category": "dental",
+    "input": "oigo un chasquido y/o tengo molestias en a zona de la articulación mandibular ¿por qué?",
+    "output": "puede ser debido a una disfunción temporo-mandibular, bruxismo (aprieta o rechina inconscientemente los dientes), ausencias dentales o mala oclusión al tener los dientes mal alineados. todo ello puede derivar en problemas para la masticación, dolor de cabeza, dolor cervical, imposibilidad de abrir bien la boca, problemas para dormir… tienen solución. dependiendo del motivo, puede ser reponer piezas ausentes, ortodoncia, tratamiento con fisioterapeuta, férula… visítanos para poder realizarle un diagnóstico y ofrecer una solución."
+  },
+  {
+    "category": "dental",
+    "input": "me sangran las encías ¿a qué puede ser debido?",
+    "output": "el sangrado de las encías puede provocar mal aliento, mal sabor, y derivar en una inflamación severa, gingivitis o periodontitis, que si no es tratada puede provocar una pérdida de encía, incluso del hueso que soporta los dientes. las causas pueden ser varias, genética, mala higiene, acumulación de sarro… todas ellas tienen solución. nuestro consejo es visitarnos en nuestra clínica dental en palma para una revisión donde valoraremos los motivos del sangrado y te ofreceremos la solución más natural y eficiente."
+  },
+  {
+    "category": "dental",
+    "input": "tengo la parte superior de los dientes (el cuello) muy desgastados, ¿es un problema?",
+    "output": "si tienes desgaste en la zona cervical de los dientes, puede que tengas sensibilidad dental, ya que tienes erosionado el esmalte de esa zona, y no está protegida. además, perjudica a la estética. puede ser debido a un cepillado “traumático” (frotar con fuerza), dieta ácida o bruxismo (aprieta o rechina inconscientemente los dientes). nuestro consejo es que vengas a nuestra clínica dental de palma para que podamos realizarte un diagnóstico personalizado."
+  },
+  {
+    "category": "dental",
+    "input": "siento molestias al masticar, en general, en toda la boca. ¿cómo puedo evitarlas?",
+    "output": "lo más probable, es que padezca bruxismo, es decir, un hábito inconsciente de apretar o rechinar los dientes, que además de molestias al masticar puede provocar, dolor de cabeza, molestias musculares en mandíbula, incluso en zona cervical, fatiga durante la masticación… existen diferentes soluciones dependiendo del grado de bruxismo, una de ellas pasa por colocar una férula en la arcada dental superior. lo conveniente es que acudas a nuestra clínica dental y evaluemos, personalmente, tu caso."
+  },
+  {
+    "category": "dental",
+    "input": "tengo un fuerte dolor espontáneo que se agrava por la noche, ¿qué puedo hacer?",
+    "output": "posiblemente, es debido a una afectación pulpar (nervio), por ejemplo, por una caries muy profunda. en este caso, seguramente, habrá que hacer una endodoncia (matar el nervio) también puede ser debido a una fractura, si es así, y dependiendo de donde se encuentre la fractura, quizás tengamos que extraer la pieza. pídenos una cita en la clínica dental en palma; evaluaremos tu caso, personalmente, y te ofreceremos la solución más eficiente para eliminar el dolor."
+  },
+  {
+    "category": "dental",
+    "input": "¿me puede ayudar el dentista a dejar de roncar?",
+    "output": "el ronquido se produce por una reducción parcial de la vía aérea superior, a nivel de la faringe, que provoca una vibración al paso del aire que causa el típico ronquido del roncador. un dentista especializado puede ayudarte mediante el uso de un aparato intraoral que sitúa la mandíbula en una posición adelantada, lo que favorece el paso de aire, impidiendo el ronquido."
+  },
+  {
+    "category": "dental",
+    "input": "hago apneas por la noche y me han dicho que existe un aparato bucal para dejar de hacerlas. ¿es cierto?",
+    "output": "las apneas suponen un grave riesgo para la salud, por lo que es muy importante recibir tratamiento. entre los distintitos tratamientos existentes está el dam, dispositivo de avance mandibular, cuya eficacia está avalada científicamente y cuya finalidad es impedir el colapso de la vía aérea superior, permitiendo así el paso normal de aire."
+  },
+  {
+    "category": "dental",
+    "input": "estoy diagnosticado de sahos (síndrome de apnea hipopnea obstructiva de sueño) y tengo que usar la cpap, pero es muy incómodo, quisiera un tratamiento alternativo. puedo usar un dispositivo de avance mandibular.",
+    "output": "la cpap es un tratamiento altamente efectivo para las apneas, pero que por su incomodidad y efectos adversos que padecen los pacientes, estos dejan de usarla con el consiguiente riesgo para la salud. por suerte, existen alternativas como los dam, dispositivo de avance mandibular, que pueden sustituir la cpap en muchos casos, y que son más cómodos, por lo que el paciente los tolera mejor. habría que evaluar cada caso de apneas y ronquidos en concreto, y en caso afirmativo realizar el dispositivo de avance a medida e ir haciendo los controles pertinentes."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuándo erupcionan los dientes?",
+    "output": "la erupción dental del primer diente suele empezar sobre los 6 meses. sin embargo, a algunos bebés le puede salir su primer diente a los 3 meses y otros al año."
+  },
+  {
+    "category": "dental",
+    "input": "le están saliendo los dientes de leche a mi bebé y tiene dolor ¿podemos hacer algo?",
+    "output": "los bebes sienten alivio con la presión en la zona donde va a erupcionar el diente, por eso se suelen morder la mano. existen chismes de goma que se enfrían, que se venden en farmacia, destinados a aliviar este dolor. en ocasiones puntuales, puede ocasionar fiebre, en cuyo caso habría que darle medicación, siempre bajo prescripción médica. es un trago por el que todos los bebes tienen que pasar y los padres deben tener mucha paciencia y darle al bebé mucho cariño."
+  },
+  {
+    "category": "dental",
+    "input": "¿una caries profunda en un diente de leche, duele tanto como en un diente permanente?",
+    "output": "sí, ya que el nervio de los dientes de leche o temporales presenta sensibilidad al dolor, igual que el nervios de los permanentes. si usted ha experimentado dolor debido a una caries profunda, debe saber que, el mismo grado de dolor, lo puede sufrir su hijo, si tuviera la misma situación en un diente de leche.en el caso de que esto ocurra, pida cita en nuestra clínica de palma."
+  },
+  {
+    "category": "dental",
+    "input": "¿hasta cuándo puede, mi hijo, usar el chupete?",
+    "output": "es aconsejable no abusar del chupete a partir del año de edad. y debe dejar de usarlo, a partir de los dos años, ya que puede provocar alteraciones en el desarrollo del paladar, mal posiciones dentarias y mala oclusión."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuándo empiezo con la higiene dental de mi hijo?",
+    "output": "mientras más temprano, mejor. así, evitaremos la formación de caries, acumulación de sarro… desde el nacimiento debe limpiar las encías del bebé con una gasa húmeda. apenas salga el primer diente, tiene que cepillarlos usando un cepillo de cerdas suave y sin pasta. se empieza a usar pasta dentífrica cuando el niño ya pueda escupir (alrededor de los tres años)."
+  },
+  {
+    "category": "dental",
+    "input": "¿es necesario tratar los dientes de leche?",
+    "output": "es muy importante mantener los dientes de leche hasta que erupcionen los definitivos. sirven, además de para masticar y poder hablar bien, para mantener y preparar el espacio para los definitivos. su buena colocación evitan futuras mal posiciones o problemas de espacio. si la colocación no es la correcta o salen caries, debe visitarnos en la clínica dental de palma para solucionarlo."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuándo he de llevar a mi hijo, por primera vez, al dentista?",
+    "output": "se aconseja llevarlo a partir del primer año, para ver su desarrollo dental, observar posibles alteraciones y prevenirlas; evitando futuros tratamientos más complicados. también, es bueno para ir familiarizándolo con nosotros y evitar el miedo, común en los niños, al dentista."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuándo erupcionan los dientes definitivos? ¿qué pasa si no salen en este tiempo?",
+    "output": "a partir de los 5 años y medio y hasta los 6, que empieza el proceso de recambio aflojándose los incisivos centrales inferiores y erupcionando los definitivos. sería una “erupción tardía”, podría ser por no estimular los dientes primarios con la alimentación o por factores genéticos. el hecho de que erupcionen mas tarde no supone ningún problema, pero hay que ir controlándolo. una medida es tomar radiografías y evaluar la cantidad de raíz que falta por reabrirse. también, es bueno para ir familiarizándolo con nosotros y evitar el miedo, común en los niños, al dentista."
+  },
+  {
+    "category": "dental",
+    "input": "¿es malo que mi hijo se chupe el dedo?",
+    "output": "la succión, siempre, es contraindicada, ya que la fuerza que se hace al succionar el dedo junto a la lengua ocasionan una fuerza tan grande que puede deformar los maxilares e incluso la dentadura, bien sea, primaria (dientes de leche) o permanente."
+  },
+  {
+    "category": "dental",
+    "input": "¿la lactancia materna ocasiona caries dental?",
+    "output": "no ocasiona caries dental. a pesar de esto, es importante limpiar la mucosa bucal de los bebes con una gasa húmeda con agua estéril cada vez que se da de amamantar. una vez que erupcionan los primeros dientes se debe usar un cepillo dental de acuerdo a la edad del bebe, sin pasta de dientes. recomendamos, evitar besarlos en la boca, ya que un paso de bacterias, y puede transmitir enfermedades."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué son las caries dentales?",
+    "output": "Las caries dentales son áreas dañadas en la superficie de los dientes causadas por la descomposición del esmalte dental debido a la acumulación de placa y bacterias."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuáles son las causas de las caries?",
+    "output": "Las caries son causadas por bacterias que producen ácidos al descomponer los azúcares de los alimentos, lo que lleva a la erosión del esmalte dental y la formación de cavidades."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo se previenen las caries dentales?",
+    "output": "Para prevenir las caries dentales, es fundamental cepillarse los dientes al menos dos veces al día con pasta fluorada, usar hilo dental, limitar el consumo de azúcares y visitar al dentista regularmente."
+  },
+  {
+    "category": "dental",
+    "input": "¿las caries dentales son dolorosas?",
+    "output": "Las caries pueden ser dolorosas si no se tratan a tiempo. El dolor suele aparecer cuando la caries ha avanzado y afecta la dentina o el nervio del diente."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo se tratan las caries dentales?",
+    "output": "El tratamiento de las caries dentales generalmente implica la eliminación de la parte afectada del diente y la restauración con un empaste. En casos más graves, puede ser necesario realizar una corona o una endodoncia."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo afectan las caries a la salud general?",
+    "output": "Las caries dentales pueden afectar la salud general al causar infecciones orales, dolor, y dificultad para comer. Las infecciones dentales pueden, en casos graves, propagarse a otras partes del cuerpo."
+  },
+  {
+    "category": "dental",
+    "input": "¿los niños son más propensos a las caries?",
+    "output": "Sí, los niños son más propensos a las caries debido a su dieta alta en azúcares y a la posibilidad de una higiene dental menos rigurosa. Es importante supervisar el cepillado y limitar los azúcares."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo afecta el azúcar en las caries?",
+    "output": "El azúcar alimenta las bacterias en la boca, que producen ácidos que erosionan el esmalte dental, facilitando la formación de caries."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué alimentos previenen las caries?",
+    "output": "Los alimentos ricos en calcio, fósforo y vitamina D, como los lácteos, nueces, y verduras de hojas verdes, ayudan a fortalecer los dientes y prevenir las caries. También, alimentos fibrosos como las manzanas pueden ayudar a limpiar los dientes de residuos."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué es la placa dental?",
+    "output": "La placa dental es una película pegajosa de bacterias que se forma sobre los dientes. Si no se elimina mediante el cepillado y el uso de hilo dental, puede convertirse en sarro y contribuir a la formación de caries."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo se elimina la placa dental?",
+    "output": "La placa dental se elimina mediante un cepillado regular con pasta dentífrica y el uso de hilo dental. Las limpiezas profesionales en el dentista también ayudan a eliminar el sarro acumulado."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuándo deben empezar los niños a cepillarse los dientes?",
+    "output": "Los niños deben empezar a cepillarse los dientes tan pronto como erupcione su primer diente. Utiliza un cepillo de dientes adecuado para su edad y pasta sin flúor hasta los 2 años."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué es el flúor y cómo ayuda contra las caries?",
+    "output": "El flúor es un mineral que fortalece el esmalte dental, haciéndolo más resistente a los ácidos producidos por las bacterias. El uso de pasta de dientes con flúor y tratamientos tópicos puede ayudar a prevenir las caries."
+  },
+  {
+    "category": "dental",
+    "input": "¿las caries dentales pueden ser hereditarias?",
+    "output": "Las caries dentales en sí no son hereditarias, pero factores genéticos pueden influir en la salud dental, como la estructura del esmalte y la forma de los dientes, lo que puede afectar la susceptibilidad a las caries."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuándo debo llevar a mi hijo al dentista por primera vez?",
+    "output": "Se recomienda llevar a los niños al dentista por primera vez alrededor del primer año de edad o cuando erupcione el primer diente, para iniciar el seguimiento y educación en salud dental."
+  },
+  {
+    "category": "dental",
+    "input": "¿las caries afectan a los dientes permanentes?",
+    "output": "Sí, las caries pueden afectar tanto a los dientes de leche como a los dientes permanentes. Es crucial tratar las caries en los dientes de leche para prevenir problemas en los dientes permanentes."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué es una caries superficial?",
+    "output": "Una caries superficial es una cavidad en las primeras etapas de formación que afecta solo la capa externa del esmalte dental. A menudo puede ser tratada con una restauración sencilla."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo se diagnostican las caries dentales?",
+    "output": "Las caries dentales se diagnostican mediante un examen dental que incluye la inspección visual, radiografías y la evaluación de los síntomas reportados por el paciente."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo influyen los medicamentos en las caries dentales?",
+    "output": "Algunos medicamentos pueden reducir la producción de saliva, lo que puede aumentar el riesgo de caries. La saliva ayuda a neutralizar los ácidos y limpiar los dientes de residuos."
+  },
+  {
+    "category": "dental",
+    "input": "¿los selladores dentales ayudan contra las caries?",
+    "output": "Sí, los selladores dentales son una capa delgada de resina que se aplica en las superficies de masticación de los dientes para protegerlos de las caries al bloquear los restos de comida y las bacterias."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo afecta el bruxismo a las caries?",
+    "output": "El bruxismo, o rechinar de dientes, puede dañar el esmalte dental y hacer que los dientes sean más susceptibles a las caries al crear áreas más propensas a la acumulación de placa."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué es una caries avanzada?",
+    "output": "Una caries avanzada es una cavidad que ha penetrado profundamente en la dentina y puede afectar el nervio del diente. Requiere tratamientos más extensos como una endodoncia o una corona."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo se puede saber si tengo una caries?",
+    "output": "Los signos de una caries incluyen sensibilidad al calor o al frío, dolor al masticar, manchas oscuras en los dientes y mal aliento. Un examen dental puede confirmar la presencia de caries."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué hacer si tengo caries?",
+    "output": "Si sospechas que tienes caries, programa una cita con tu dentista lo antes posible. El tratamiento temprano puede evitar la progresión de la caries y salvar el diente."
+  },
+  {
+    "category": "dental",
+    "input": "¿la caries puede volver después del tratamiento?",
+    "output": "Sí, si no se mantienen buenas prácticas de higiene dental, las caries pueden volver a formarse en el mismo diente o en otros dientes. Es crucial seguir cuidando los dientes y mantener las visitas regulares al dentista."
+  },
+  {
+    "category": "dental",
+    "input": "¿los dientes sensibles pueden ser señal de caries?",
+    "output": "Sí, la sensibilidad dental puede ser una señal de caries. La erosión del esmalte debido a las caries puede exponer la dentina, causando sensibilidad al calor, frío o ciertos alimentos."
+  },
+  {
+    "category": "dental",
+    "input": "¿las caries pueden causar mal aliento?",
+    "output": "Sí, las caries pueden causar mal aliento debido a la acumulación de bacterias y desechos en la cavidad. Mantener una buena higiene oral y tratar las caries puede ayudar a reducir el mal aliento."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué es una cavidad dental?",
+    "output": "Una cavidad dental es un área dañada en el diente causada por la descomposición del esmalte dental y la formación de una cavidad que puede progresar si no se trata."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo afecta la edad a las caries dentales?",
+    "output": "La susceptibilidad a las caries puede aumentar con la edad debido a la reducción de la producción de saliva, cambios en la salud general y un aumento en la acumulación de placa y sarro."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo ayuda el hilo dental contra las caries?",
+    "output": "El hilo dental ayuda a eliminar la placa y los restos de alimentos que se quedan entre los dientes y debajo de la línea de las encías, donde el cepillo no llega. Esto previene la formación de caries entre los dientes."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué sucede si una caries no se trata?",
+    "output": "Si una caries no se trata, puede progresar y afectar la dentina y el nervio del diente, lo que puede llevar a infecciones, dolor intenso y pérdida del diente."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuánto tiempo tarda en desarrollarse una caries?",
+    "output": "El tiempo que tarda en desarrollarse una caries puede variar según la dieta, la higiene dental y la susceptibilidad individual. Puede tomar desde semanas hasta varios meses para que una caries se forme y sea detectable."
+  },
+  {
+    "category": "dental",
+    "input": "¿es verdad que el vino tinto causa caries?",
+    "output": "El vino tinto puede contribuir a la formación de caries debido a su contenido de azúcares y ácidos, que pueden dañar el esmalte dental. Es importante enjuagar la boca con agua después de consumir bebidas ácidas o azucaradas."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué es la erosión dental?",
+    "output": "La erosión dental es la pérdida de esmalte dental debido a la exposición a ácidos, que puede ser causada por alimentos, bebidas, o condiciones médicas. La erosión puede aumentar la susceptibilidad a las caries."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué son las caries de la raíz?",
+    "output": "Las caries de la raíz son caries que se desarrollan en la parte de la raíz del diente, típicamente en personas con encías retraídas. Estas caries pueden ser más difíciles de detectar y tratar."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo se realiza una restauración dental?",
+    "output": "Una restauración dental implica la eliminación de la parte dañada del diente y la colocación de un material de relleno, como una resina compuesta o amalgama, para restaurar la forma y función del diente."
+  },
+  {
+    "category": "dental",
+    "input": "¿las caries pueden causar problemas en el habla?",
+    "output": "Sí, las caries pueden afectar el habla si afectan a los dientes frontales o a la alineación de los dientes. El tratamiento adecuado puede ayudar a evitar estos problemas."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué es la caries de esmalte?",
+    "output": "La caries de esmalte es una caries que afecta únicamente la capa externa del diente, el esmalte. Aunque menos grave que una caries que afecta la dentina, aún requiere tratamiento para evitar que progrese."
+  },
+  {
+    "category": "dental",
+    "input": "¿las caries dentales se pueden prevenir con enjuagues bucales?",
+    "output": "Los enjuagues bucales pueden ayudar a reducir la placa y el riesgo de caries, pero no sustituyen el cepillado y el uso de hilo dental. Se deben usar como complemento a una buena higiene dental."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo puede afectar el consumo de refrescos a las caries?",
+    "output": "El consumo de refrescos puede aumentar el riesgo de caries debido a su alto contenido de azúcares y ácidos, que pueden erosionar el esmalte dental. Es importante limitar su consumo y enjuagar la boca después de beberlos."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué papel juega la saliva en la prevención de caries?",
+    "output": "La saliva ayuda a neutralizar los ácidos en la boca, limpiar los restos de alimentos y proporcionar minerales esenciales para fortalecer el esmalte dental. Una buena producción de saliva es crucial para prevenir caries."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué son las caries dentales?",
+    "output": "Las caries dentales son áreas dañadas en la superficie de los dientes que se convierten en agujeros o cavidades. Son causadas por la descomposición de los azúcares en la placa bacteriana que produce ácidos que atacan el esmalte dental."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuáles son los síntomas de las caries dentales?",
+    "output": "Los síntomas de las caries dentales pueden incluir dolor dental, sensibilidad a alimentos o bebidas frías, calientes o dulces, manchas oscuras en los dientes, dolor al masticar, y mal aliento persistente."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo se forman las caries dentales?",
+    "output": "Las caries dentales se forman cuando las bacterias en la placa dental convierten los azúcares de los alimentos en ácidos. Estos ácidos desmineralizan el esmalte dental, creando áreas débiles que eventualmente se convierten en caries."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué alimentos causan caries dentales?",
+    "output": "Los alimentos ricos en azúcares y almidones, como dulces, galletas, pasteles, y bebidas azucaradas, pueden causar caries dentales. Estos alimentos fomentan el crecimiento de bacterias que producen ácidos dañinos para el esmalte dental."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo prevenir las caries dentales?",
+    "output": "Para prevenir las caries dentales, es importante mantener una buena higiene oral cepillándose los dientes dos veces al día con pasta dental con flúor, usar hilo dental diariamente, reducir el consumo de azúcares y visitar al dentista regularmente para chequeos y limpiezas."
+  },
+  {
+    "category": "dental",
+    "input": "¿las caries dentales pueden causar mal aliento?",
+    "output": "Sí, las caries dentales pueden causar mal aliento debido a la acumulación de bacterias en las cavidades. El mal aliento persistente puede ser un signo de caries u otros problemas dentales."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo se tratan las caries dentales?",
+    "output": "El tratamiento de las caries dentales incluye la eliminación del tejido dental dañado y la restauración del diente con un empaste, una corona o un tratamiento de conducto en casos severos. Es importante tratar las caries lo antes posible para evitar complicaciones."
+  },
+  {
+    "category": "dental",
+    "input": "¿es doloroso el tratamiento de las caries?",
+    "output": "El tratamiento de las caries dentales generalmente se realiza bajo anestesia local para minimizar el dolor. Después del procedimiento, es posible experimentar molestias menores, pero el dolor intenso no debería ser un problema."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuánto dura un empaste dental?",
+    "output": "La duración de un empaste dental depende del material utilizado y de los hábitos de cuidado dental del paciente. En general, los empastes de resina compuesta pueden durar entre 5 y 7 años, mientras que los empastes de amalgama pueden durar entre 10 y 15 años."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué es una endodoncia?",
+    "output": "Una endodoncia, también conocida como tratamiento de conducto, es un procedimiento que se realiza para tratar infecciones en el interior del diente (pulpa). Consiste en eliminar la pulpa infectada, limpiar y desinfectar el canal radicular, y luego sellar el diente para evitar futuras infecciones."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo se realiza una radiografía dental para detectar caries?",
+    "output": "Una radiografía dental para detectar caries implica tomar imágenes de los dientes y las estructuras circundantes usando rayos X. Estas imágenes permiten al dentista ver áreas de desmineralización o caries que no son visibles a simple vista."
+  },
+  {
+    "category": "dental",
+    "input": "¿las caries dentales afectan solo a los dientes permanentes?",
+    "output": "No, las caries dentales pueden afectar tanto a los dientes temporales (dientes de leche) como a los dientes permanentes. Es importante cuidar todos los dientes, independientemente de su etapa de desarrollo."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuáles son los riesgos de no tratar las caries dentales?",
+    "output": "Si no se tratan, las caries dentales pueden empeorar y causar dolor intenso, infecciones, abscesos dentales y pérdida del diente afectado. También pueden afectar la salud general si la infección se propaga a otras partes del cuerpo."
+  },
+  {
+    "category": "dental",
+    "input": "¿es necesario tratar las caries en los dientes de leche?",
+    "output": "Sí, es importante tratar las caries en los dientes de leche porque estos dientes afectan el desarrollo de los dientes permanentes. Las caries no tratadas pueden causar dolor y problemas en la masticación y el habla de los niños."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo afectan las caries a la salud general?",
+    "output": "Las caries dentales pueden afectar la salud general al causar infecciones que pueden propagarse a otras partes del cuerpo. Además, el dolor dental crónico puede afectar la alimentación y el bienestar general del paciente."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué materiales se utilizan para los empastes dentales?",
+    "output": "Los empastes dentales pueden estar hechos de diversos materiales, incluyendo amalgama (una mezcla de metales), resina compuesta (un material plástico que se puede colorear para coincidir con el diente), y cerámica. La elección del material depende de la ubicación de la caries y las preferencias del paciente."
+  },
+  {
+    "category": "dental",
+    "input": "¿puede el uso excesivo de flúor prevenir las caries?",
+    "output": "El flúor es efectivo para prevenir las caries, pero el uso excesivo puede causar fluorosis dental, que es una condición que afecta el esmalte dental. Es importante usar productos con flúor en las cantidades recomendadas y consultar a un dentista si tienes dudas sobre el uso del flúor."
+  },
+  {
+    "category": "dental",
+    "input": "¿las caries se pueden curar solas?",
+    "output": "No, las caries dentales no se curan solas. Una vez que el esmalte dental está dañado, el tratamiento dental es necesario para restaurar la salud del diente. La intervención temprana puede ayudar a prevenir el daño adicional."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuánto tiempo lleva recuperar un diente después de un tratamiento de caries?",
+    "output": "La recuperación después de un tratamiento de caries depende del tipo de tratamiento realizado. En general, la mayoría de las personas puede volver a sus actividades normales inmediatamente después del procedimiento, aunque puede haber una ligera molestia que dura unos días."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuándo debo volver a ver al dentista después de un tratamiento de caries?",
+    "output": "Es recomendable volver al dentista para un chequeo de seguimiento aproximadamente seis meses después del tratamiento de caries. Esto asegura que el diente tratado se esté recuperando adecuadamente y no haya problemas adicionales."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo puedo reducir el riesgo de caries dentales en mi hijo?",
+    "output": "Para reducir el riesgo de caries dentales en los niños, es importante mantener una buena higiene oral desde una edad temprana, limitar el consumo de alimentos azucarados, asegurarse de que el niño reciba un flúor adecuado y visitar al dentista regularmente para chequeos y limpiezas."
+  },
+  {
+    "category": "dental",
+    "input": "¿los selladores dentales ayudan a prevenir las caries?",
+    "output": "Sí, los selladores dentales son una capa delgada de material plástico que se aplica sobre las superficies masticatorias de los dientes para protegerlos de las caries. Son especialmente útiles en los dientes de los niños y adolescentes para prevenir la acumulación de placa en áreas de difícil acceso."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuál es la diferencia entre un empaste y una corona dental?",
+    "output": "Un empaste es un material que se usa para rellenar una cavidad en el diente después de eliminar el tejido dañado. Una corona dental es una funda que cubre completamente el diente afectado para restaurar su forma y función. Las coronas se utilizan generalmente en casos de daño extenso o después de un tratamiento de conducto."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo afecta la genética en el desarrollo de caries dentales?",
+    "output": "La genética puede influir en la susceptibilidad a las caries dentales al afectar la calidad del esmalte dental y la composición de la saliva. Sin embargo, el cuidado dental adecuado y la dieta también juegan un papel crucial en la prevención de las caries."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué impacto tiene el estrés en la salud dental?",
+    "output": "El estrés puede afectar la salud dental al llevar a hábitos como el bruxismo (rechinar de dientes), que puede causar desgaste dental y dolor. También puede afectar la salud general, aumentando el riesgo de infecciones y problemas dentales."
+  },
+  {
+    "category": "dental",
+    "input": "¿es útil el enjuague bucal para prevenir caries?",
+    "output": "Sí, el enjuague bucal puede ayudar a prevenir las caries dentales al reducir la placa y las bacterias en la boca. Elige un enjuague bucal que contenga flúor para una mayor protección contra las caries."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo se realiza una limpieza dental profesional para prevenir caries?",
+    "output": "Una limpieza dental profesional incluye la eliminación de placa y sarro de los dientes, así como el pulido para eliminar manchas y bacterias. También se revisa el estado de los dientes y encías para detectar signos de caries o problemas dentales."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo afecta el embarazo a la salud dental y las caries?",
+    "output": "Durante el embarazo, los cambios hormonales pueden aumentar el riesgo de problemas dentales, como la gingivitis y las caries. Es importante mantener una buena higiene oral y visitar al dentista regularmente durante el embarazo para prevenir y tratar problemas dentales."
+  },
+  {
+    "category": "dental",
+    "input": "¿cuál es el papel del flúor en la prevención de las caries?",
+    "output": "El flúor ayuda a fortalecer el esmalte dental y a reparar las áreas debilitadas antes de que se conviertan en caries. También reduce la capacidad de las bacterias en la placa para producir ácidos que dañan el esmalte."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué efectos tienen los tratamientos de caries en los dientes de los adultos mayores?",
+    "output": "Los tratamientos de caries en los adultos mayores pueden ayudar a preservar la salud dental y mejorar la función de los dientes. Sin embargo, el proceso de recuperación puede ser más lento debido a la disminución de la densidad ósea y otros cambios relacionados con la edad."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo afecta el consumo de bebidas azucaradas a las caries dentales?",
+    "output": "El consumo frecuente de bebidas azucaradas puede aumentar el riesgo de caries dentales al proporcionar azúcares que las bacterias en la boca convierten en ácidos. Estos ácidos pueden dañar el esmalte dental y provocar caries."
+  },
+
+  {
+    "category": "dental",
+    "input": "¿necesito ayuda?",
+    "output": "¡Hola! ¿En qué puedo ayudarte hoy? Por favor, dime qué necesitas y estaré encantado de asistirte."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo puedo obtener asistencia?",
+    "output": "Puedes obtener asistencia especificando tu problema o pregunta. Dime qué necesitas y te proporcionaré la información o ayuda que buscas."
+  },
+  {
+    "category": "dental",
+    "input": "¿en qué puedo ayudarte?",
+    "output": "Estoy aquí para ayudarte con cualquier pregunta o problema que tengas. ¿Qué necesitas saber o en qué área necesitas asistencia?"
+  },
+  {
+    "category": "dental",
+    "input": "¿me puedes ayudar con algo?",
+    "output": "Claro, estaré encantado de ayudarte. Por favor, proporciona más detalles sobre lo que necesitas y haré lo mejor posible para asistirte."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo puedo recibir soporte?",
+    "output": "Para recibir soporte, indícame tu problema o pregunta específica. Te proporcionaré la información o asistencia adecuada según lo que necesites."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué tipo de ayuda ofreces?",
+    "output": "Ofrezco ayuda con una variedad de temas. Puedes preguntarme sobre información dental, asistencia técnica, consejos, o cualquier otra cosa en la que necesites ayuda."
+  },
+  {
+    "category": "dental",
+    "input": "¿dónde puedo obtener ayuda?",
+    "output": "Puedo proporcionarte ayuda aquí mismo. Solo dime qué necesitas y te asistiré con la información o solución que buscas."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo puedo resolver un problema?",
+    "output": "Para resolver un problema, explícame los detalles del mismo y te proporcionaré la mejor solución o pasos a seguir para solucionarlo."
+  },
+  {
+    "category": "dental",
+    "input": "¿qué debo hacer si necesito ayuda inmediata?",
+    "output": "Si necesitas ayuda inmediata, por favor describe tu situación con la mayor precisión posible. Trataré de proporcionarte una solución rápida o dirigirte a los recursos adecuados."
+  },
+  {
+    "category": "dental",
+    "input": "¿cómo contacto con el soporte?",
+    "output": "Puedes contactar con el soporte proporcionando los detalles de tu problema aquí. También te recomendaría que expliques claramente tu situación para que pueda asistirte de la mejor manera posible."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es la ortodoncia?",
+    "output": "La ortodoncia es una especialidad de la odontología que se ocupa de la corrección de los dientes y mandíbulas desalineadas. Su objetivo es mejorar la alineación dental, la mordida y la estética de la sonrisa."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo funciona la ortodoncia?",
+    "output": "La ortodoncia utiliza dispositivos como brackets y alambres para aplicar presión constante sobre los dientes y mandíbulas. Esto ayuda a mover los dientes a su posición correcta y a mejorar la mordida y la alineación dental."
+  },
+  {
+    "category": "dental",
+    "input": "¿Quién puede recibir tratamiento de ortodoncia?",
+    "output": "El tratamiento de ortodoncia puede ser beneficioso para personas de todas las edades, desde niños hasta adultos. Es importante consultar con un ortodoncista para evaluar el tratamiento adecuado según las necesidades individuales."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cuál es la edad ideal para comenzar el tratamiento de ortodoncia?",
+    "output": "La edad ideal para comenzar el tratamiento de ortodoncia es entre los 7 y 12 años, cuando los dientes permanentes están saliendo. Sin embargo, los tratamientos pueden ser efectivos en adolescentes y adultos también."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cuánto dura el tratamiento de ortodoncia?",
+    "output": "La duración del tratamiento de ortodoncia varía según la complejidad del caso. Generalmente, el tratamiento puede durar entre 18 y 24 meses, aunque algunos casos pueden requerir más tiempo."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué tipos de brackets existen?",
+    "output": "Existen varios tipos de brackets, incluyendo brackets metálicos, cerámicos, linguales (colocados en la parte interna de los dientes) y brackets autoligables. Cada tipo tiene sus propias características y beneficios."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo se colocan los brackets?",
+    "output": "Los brackets se colocan en los dientes con un adhesivo especial. Luego, se conecta un alambre a los brackets que aplica presión para mover los dientes a su posición correcta."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué cuidados debo tener con los brackets?",
+    "output": "Debes mantener una buena higiene bucal cepillándote los dientes después de cada comida, usar hilo dental y evitar alimentos pegajosos y duros que puedan dañar los brackets."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un alineador transparente?",
+    "output": "Un alineador transparente es una alternativa a los brackets tradicionales. Está hecho de un material plástico transparente y se usa para mover los dientes gradualmente hacia su posición correcta. Es casi invisible y se puede quitar para comer y cepillarse los dientes."
+  },
+  {
+    "category": "dental",
+    "input": "¿Los alineadores transparentes son tan efectivos como los brackets?",
+    "output": "Sí, los alineadores transparentes pueden ser igual de efectivos que los brackets para corregir una variedad de problemas de alineación dental. Sin embargo, son más adecuados para casos menos complejos y para pacientes que pueden comprometerse a usarlos según las indicaciones."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué son los brackets linguales?",
+    "output": "Los brackets linguales son brackets colocados en la parte interna de los dientes, lo que los hace invisibles desde el exterior. Son una opción estética para aquellos que desean una corrección dental sin que se vean los brackets."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cuándo debo usar un retenedor?",
+    "output": "Debes usar un retenedor después de completar el tratamiento de ortodoncia para mantener los dientes en su nueva posición. El ortodoncista te indicará cuánto tiempo y con qué frecuencia debes usarlo."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo se realiza el ajuste de brackets?",
+    "output": "El ajuste de brackets se realiza durante las citas periódicas con el ortodoncista. Consiste en cambiar el alambre de los brackets, ajustar los componentes y verificar el progreso del tratamiento."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué hacer si se rompe un bracket?",
+    "output": "Si se rompe un bracket, contacta a tu ortodoncista lo antes posible para programar una cita de reparación. Mientras tanto, evita comer alimentos duros o pegajosos y mantén una buena higiene bucal."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo afecta el tratamiento de ortodoncia a la salud bucal?",
+    "output": "El tratamiento de ortodoncia puede mejorar la salud bucal al alinear los dientes y corregir problemas de mordida, lo que facilita la limpieza y reduce el riesgo de caries y enfermedades de las encías."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un expansor palatino?",
+    "output": "Un expansor palatino es un dispositivo utilizado para ensanchar el paladar superior en pacientes con problemas de espacio o mordida. Se utiliza comúnmente en niños y adolescentes antes o durante el tratamiento de ortodoncia."
+  },
+  {
+    "category": "dental",
+    "input": "¿Puedo hacer deporte con brackets?",
+    "output": "Sí, puedes hacer deporte con brackets, pero es recomendable usar un protector bucal para proteger los brackets y los dientes de posibles impactos o lesiones."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo afecta el uso de los brackets a la dieta?",
+    "output": "El uso de brackets puede requerir ajustes en la dieta. Debes evitar alimentos duros, pegajosos y masticables que puedan dañar los brackets, y optar por alimentos blandos y fáciles de masticar."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una ortopantomografía?",
+    "output": "Una ortopantomografía es una radiografía panorámica que muestra una vista completa de los dientes, mandíbulas y estructuras circundantes. Se utiliza para planificar el tratamiento de ortodoncia y evaluar el progreso."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una férula de retención?",
+    "output": "Una férula de retención es un dispositivo que se usa después del tratamiento de ortodoncia para mantener los dientes en su nueva posición. Puede ser de plástico o metálica y se usa según las indicaciones del ortodoncista."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo puedo aliviar el dolor causado por los brackets?",
+    "output": "Para aliviar el dolor causado por los brackets, puedes usar analgésicos de venta libre, aplicar cera dental en los brackets para reducir la fricción y comer alimentos blandos. Si el dolor persiste, consulta a tu ortodoncista."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un diagnóstico ortodóncico?",
+    "output": "Un diagnóstico ortodóncico es el proceso de evaluación de los dientes, mandíbulas y estructuras relacionadas para identificar problemas de alineación y mordida. Incluye análisis clínicos, radiografías y modelos de los dientes."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué factores pueden influir en la duración del tratamiento de ortodoncia?",
+    "output": "La duración del tratamiento de ortodoncia puede verse influenciada por factores como la gravedad del problema dental, la cooperación del paciente, el tipo de dispositivos ortodónticos utilizados y la frecuencia de los ajustes."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo afectan los hábitos orales a la ortodoncia?",
+    "output": "Los hábitos orales como chuparse el dedo, morderse las uñas o usar los dientes para abrir objetos pueden afectar negativamente el tratamiento de ortodoncia, causando movimientos no deseados de los dientes y retrasos en el tratamiento."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un bracket autoligable?",
+    "output": "Un bracket autoligable es un tipo de bracket que no requiere ligaduras elásticas para sujetar el alambre. Utiliza un mecanismo de clip o compresión para mantener el alambre en su lugar, lo que puede reducir la fricción y el tiempo de tratamiento."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un alambre de arco?",
+    "output": "Un alambre de arco es un componente del sistema de brackets que se conecta a los brackets y aplica presión para mover los dientes. Está hecho de metal y puede variar en grosor y forma según las necesidades del tratamiento."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un bracket metálico?",
+    "output": "Un bracket metálico es un tipo de bracket hecho de metal que se coloca en la parte frontal de los dientes. Es uno de los tipos más comunes de brackets y es conocido por su durabilidad y eficacia en el tratamiento de ortodoncia."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una visita de seguimiento en ortodoncia?",
+    "output": "Una visita de seguimiento en ortodoncia es una cita periódica con el ortodoncista para evaluar el progreso del tratamiento, hacer ajustes a los brackets o alineadores, y abordar cualquier problema o preocupación que pueda surgir."
+  },
+  {
+    "category": "dental",
+    "input": "¿Puedo fumar mientras uso brackets?",
+    "output": "Fumar mientras usas brackets no está recomendado, ya que puede afectar la salud bucal, dificultar la limpieza y manchar los brackets. Es mejor evitar el tabaco para asegurar un tratamiento de ortodoncia más efectivo y una mejor salud dental."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una ortodoncia interceptiva?",
+    "output": "La ortodoncia interceptiva es un enfoque preventivo que se realiza en niños para corregir problemas dentales antes de que se conviertan en problemas graves. Puede incluir el uso de dispositivos para guiar el crecimiento dental y mandibular."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un diagnóstico de ortodoncia en adultos?",
+    "output": "El diagnóstico de ortodoncia en adultos incluye una evaluación completa de los dientes, mandíbulas y tejidos circundantes para identificar problemas de alineación y mordida. Se utilizan radiografías y modelos para planificar el tratamiento adecuado."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo se realiza un plan de tratamiento de ortodoncia?",
+    "output": "Un plan de tratamiento de ortodoncia se basa en el diagnóstico y análisis de los dientes y mandíbulas. Incluye la selección de los dispositivos ortodónticos adecuados, la planificación de la secuencia de movimientos dentales y la estimación de la duración del tratamiento."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un ajuste de brackets?",
+    "output": "Un ajuste de brackets es una cita con el ortodoncista para cambiar el alambre de los brackets, revisar el progreso del tratamiento y hacer ajustes necesarios para asegurar que los dientes se muevan hacia la posición deseada."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una radiografía de perfiles?",
+    "output": "Una radiografía de perfiles es una radiografía que muestra una vista lateral de la cabeza, incluyendo los dientes, mandíbulas y tejidos circundantes. Se utiliza para evaluar la relación entre los dientes y las estructuras óseas."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo afecta el tratamiento de ortodoncia a los dientes sensibles?",
+    "output": "El tratamiento de ortodoncia puede causar sensibilidad dental temporal debido a los movimientos de los dientes. Esto suele ser temporal y se puede aliviar con analgésicos de venta libre y evitando alimentos extremadamente fríos o calientes."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un tratamiento de ortodoncia combinado?",
+    "output": "Un tratamiento de ortodoncia combinado es un enfoque que combina ortodoncia con otros tratamientos dentales, como cirugía ortognática o tratamientos periodontales, para abordar problemas complejos de alineación dental y mandíbula."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un ortodoncista?",
+    "output": "Un ortodoncista es un dentista especializado en la corrección de dientes y mandíbulas desalineadas. Tiene una formación adicional en el diagnóstico y tratamiento de problemas ortodónticos y trabaja para mejorar la alineación dental y la mordida."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un bracket cerámico?",
+    "output": "Un bracket cerámico es un tipo de bracket hecho de material cerámico transparente o del color de los dientes. Es menos visible que los brackets metálicos y se usa para tratar problemas dentales de manera más discreta."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un bracket lingual?",
+    "output": "Un bracket lingual es un tipo de bracket que se coloca en la parte posterior de los dientes, hacia la lengua. Esto lo hace invisible desde el exterior y es una opción estética para aquellos que desean corregir sus dientes sin que se vean los brackets."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo se hace la limpieza de los brackets?",
+    "output": "Para limpiar los brackets, debes cepillarte los dientes después de cada comida usando un cepillo de cerdas suaves. También es importante usar hilo dental para eliminar los restos de alimentos entre los dientes y alrededor de los brackets."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una ortodoncia estética?",
+    "output": "La ortodoncia estética se refiere al uso de dispositivos ortodónticos diseñados para ser menos visibles, como los alineadores transparentes y los brackets cerámicos. El objetivo es corregir problemas dentales mientras se minimiza el impacto estético."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un tratamiento de ortodoncia preventiva?",
+    "output": "El tratamiento de ortodoncia preventiva se realiza antes de que se desarrollen problemas dentales graves. Incluye el uso de dispositivos para guiar el crecimiento dental y mandibular, y prevenir problemas de alineación en el futuro."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un diagnóstico de ortodoncia?",
+    "output": "Un diagnóstico de ortodoncia implica una evaluación completa de los dientes, mandíbulas y tejidos circundantes para identificar problemas de alineación y mordida. Incluye el análisis de radiografías y modelos de los dientes para planificar el tratamiento adecuado."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una fase de tratamiento de ortodoncia?",
+    "output": "Una fase de tratamiento de ortodoncia se refiere a las diferentes etapas del tratamiento, como la fase inicial de alineación, la fase de ajuste y la fase de retención. Cada fase tiene objetivos específicos y utiliza diferentes dispositivos ortodónticos."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una ortodoncia funcional?",
+    "output": "La ortodoncia funcional se centra en el uso de dispositivos para corregir problemas de mordida y alineación dental al influir en el crecimiento y desarrollo de las mandíbulas. Se utiliza comúnmente en niños para guiar el desarrollo dental y mandibular."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo afecta el tratamiento de ortodoncia a los dientes?",
+    "output": "El tratamiento de ortodoncia mueve los dientes a su posición correcta aplicando presión constante. Esto puede causar molestias temporales y cambios en la posición dental, pero a largo plazo mejora la alineación y la funcionalidad de los dientes."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un ajuste de arco?",
+    "output": "Un ajuste de arco es el proceso de cambiar o ajustar el alambre que conecta los brackets. Esto se realiza durante las citas periódicas para asegurarse de que el alambre continúe aplicando la presión adecuada para mover los dientes."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo afecta el tratamiento de ortodoncia a la salud de las encías?",
+    "output": "El tratamiento de ortodoncia puede afectar la salud de las encías si no se mantiene una buena higiene bucal. Los brackets pueden atrapar restos de alimentos y placa, lo que puede provocar inflamación o enfermedades de las encías si no se limpian adecuadamente."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una ortodoncia de expansión?",
+    "output": "La ortodoncia de expansión es un tratamiento que se utiliza para ensanchar el paladar superior o la mandíbula para crear más espacio para los dientes. Esto se puede lograr con dispositivos como expansores palatinos o brackets especiales."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo afecta el tratamiento de ortodoncia a la mandíbula?",
+    "output": "El tratamiento de ortodoncia puede influir en la posición de la mandíbula al corregir problemas de mordida y alineación. Esto puede mejorar la función masticatoria y reducir el riesgo de problemas de mandíbula relacionados con una mordida desalineada."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una cita de ajuste en ortodoncia?",
+    "output": "Una cita de ajuste en ortodoncia es una visita periódica con el ortodoncista para revisar y ajustar los brackets, cambiar el alambre y evaluar el progreso del tratamiento. Es importante para asegurar que el tratamiento avance según lo planeado."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un tratamiento de ortodoncia combinado?",
+    "output": "El tratamiento de ortodoncia combinado implica el uso de diferentes modalidades de tratamiento, como brackets y cirugía ortognática, para abordar problemas dentales complejos que requieren una solución integral."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un plano de tratamiento de ortodoncia?",
+    "output": "Un plan de tratamiento de ortodoncia es un documento detallado que describe los objetivos del tratamiento, los dispositivos que se utilizarán, la duración esperada del tratamiento y los pasos a seguir para corregir los problemas dentales."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué son las retenciones en ortodoncia?",
+    "output": "Las retenciones en ortodoncia son dispositivos que se usan después del tratamiento para mantener los dientes en su nueva posición. Pueden ser fijas o removibles y ayudan a prevenir el movimiento de los dientes a su posición original."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una ortodoncia interceptiva?",
+    "output": "La ortodoncia interceptiva es un enfoque que se utiliza para corregir problemas dentales en etapas tempranas, antes de que se conviertan en problemas graves. Incluye el uso de dispositivos para guiar el crecimiento dental y mandibular."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo afectan los hábitos orales a la ortodoncia?",
+    "output": "Los hábitos orales como chuparse el dedo o morderse las uñas pueden afectar negativamente el tratamiento de ortodoncia al causar movimientos no deseados de los dientes y dificultar el progreso del tratamiento."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una ortodoncia estética?",
+    "output": "La ortodoncia estética se enfoca en corregir problemas dentales utilizando dispositivos que son menos visibles, como los alineadores transparentes y los brackets cerámicos, para mejorar la apariencia sin comprometer la eficacia del tratamiento."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un expansor palatino?",
+    "output": "Un expansor palatino es un dispositivo utilizado para ensanchar el paladar superior. Se usa para crear más espacio para los dientes y corregir problemas de alineación y mordida en pacientes en crecimiento."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un bracket autoligable?",
+    "output": "Un bracket autoligable es un tipo de bracket que utiliza un mecanismo de clip para sujetar el alambre, eliminando la necesidad de ligaduras elásticas. Esto puede reducir la fricción y el tiempo de tratamiento."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un bracket cerámico?",
+    "output": "Un bracket cerámico es un tipo de bracket hecho de material cerámico transparente o del color de los dientes. Ofrece una opción más estética que los brackets metálicos, ya que son menos visibles."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un bracket lingual?",
+    "output": "Un bracket lingual es un tipo de bracket que se coloca en la parte posterior de los dientes, hacia la lengua. Esto lo hace invisible desde el exterior, proporcionando una opción discreta para la corrección dental."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una férula de retención?",
+    "output": "Una férula de retención es un dispositivo que se usa después del tratamiento de ortodoncia para mantener los dientes en su nueva posición. Puede ser de plástico o metálica y se usa para prevenir el movimiento de los dientes."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo puedo aliviar el dolor causado por los brackets?",
+    "output": "Para aliviar el dolor causado por los brackets, puedes usar analgésicos de venta libre, aplicar cera dental en los brackets para reducir la fricción y comer alimentos blandos. Si el dolor persiste, consulta a tu ortodoncista."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un diagnóstico ortodóncico?",
+    "output": "Un diagnóstico ortodóncico es el proceso de evaluación de los dientes, mandíbulas y estructuras relacionadas para identificar problemas de alineación y mordida. Incluye análisis clínicos, radiografías y modelos de los dientes."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo se realiza un plan de tratamiento de ortodoncia?",
+    "output": "Un plan de tratamiento de ortodoncia se basa en el diagnóstico y análisis de los dientes y mandíbulas. Incluye la selección de los dispositivos ortodónticos adecuados, la planificación de la secuencia de movimientos dentales y la estimación de la duración del tratamiento."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una radiografía de perfiles?",
+    "output": "Una radiografía de perfiles es una radiografía que muestra una vista lateral de la cabeza, incluyendo los dientes, mandíbulas y tejidos circundantes. Se utiliza para evaluar la relación entre los dientes y las estructuras óseas."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una ortodoncia funcional?",
+    "output": "La ortodoncia funcional se centra en el uso de dispositivos para corregir problemas de mordida y alineación dental al influir en el crecimiento y desarrollo de las mandíbulas. Se utiliza comúnmente en niños para guiar el desarrollo dental y mandibular."
+  },
+  {
+    "category": "dental",
+    "input": "¿Cómo afecta el tratamiento de ortodoncia a la mandíbula?",
+    "output": "El tratamiento de ortodoncia puede influir en la posición de la mandíbula al corregir problemas de mordida y alineación. Esto puede mejorar la función masticatoria y reducir el riesgo de problemas de mandíbula relacionados con una mordida desalineada."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es un tratamiento de ortodoncia combinado?",
+    "output": "El tratamiento de ortodoncia combinado implica el uso de diferentes modalidades de tratamiento, como brackets y cirugía ortognática, para abordar problemas dentales complejos que requieren una solución integral."
+  },
+  {
+    "category": "dental",
+    "input": "¿Qué es una ortodoncia interceptiva?",
+    "output": "La ortodoncia interceptiva es un enfoque que se utiliza para corregir problemas dentales en etapas tempranas, antes de que se conviertan en problemas graves. Incluye el uso de dispositivos para guiar el crecimiento dental y mandibular."
+  }
+]

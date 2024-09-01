@@ -18,6 +18,7 @@ import { citaEnLineaRouter } from './routes/citaEnLinea.routes.js';
 import { planTratamientoRouter } from './routes/planTratamiento.routes.js';
 import { tipoSangreRouter } from './routes/tipoSangre.routes.js';
 import { pagoTratamientoRouter } from './routes/pagoTratamiento.routes.js';
+import { iaRouter } from './routes/ia.routes.js';
 
 const app = express();
 app.use(express.json());
@@ -46,6 +47,8 @@ app.use('/api/v1/consulta', consultaRouter);
 app.use('/api/v1/pagos', pagoTratamientoRouter);
 app.use('/api/v1/tratamiento-dental', traramientoDentalRouter);
 app.use('/api/v1/plan-tratamiento', planTratamientoRouter);
+app.use('/api/v1/chat-bot', iaRouter);
+app.use('/api/v1/uploads', express.static(path.join(__dirname, 'uploads')));
 
 app.all('*', (req, res, next) => {
   return next(

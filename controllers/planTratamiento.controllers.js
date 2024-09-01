@@ -2,8 +2,6 @@ import { AppError } from '../utils/AppError.js';
 import { TratamientoDental } from '../models/traramientoDental.model.js';
 import { Paciente } from '../models/paciente.model.js';
 import { Op, Sequelize } from 'sequelize'; // Asegúrate de importar Sequelize
-import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
-import { storage } from '../utils/firebase.js';
 import { PlanTratamiento } from '../models/planTratamiento.model.js';
 
 export const findAll = async (req, res, next) => {
@@ -138,14 +136,13 @@ export const create = async (req, res, next) => {
     const dataJson = JSON.parse(data);
     const tratamientoDentalJson = JSON.parse(tratamientosDental);
 
-    const fileRef = ref(
-      storage,
-      `linkFile/${Date.now()}-${req.file.originalname}`
-    );
+    const file = req.file;
+    const fileName = file.filename;
 
-    await uploadBytes(fileRef, req.file.buffer);
+    const host = req.get('host');
+    const protocol = req.protocol;
 
-    const fileUploaded = await getDownloadURL(fileRef);
+    const linkFile = `${protocol}://${host}/api/v1/upload/${fileName}`;
 
     const montoTotal = Number(dataJson.montoTotal);
     const acuenta = Number(dataJson.acuenta);
@@ -159,7 +156,7 @@ export const create = async (req, res, next) => {
       acuenta,
       deuda,
       consultorioId,
-      linkFile: fileUploaded,
+      linkFile,
     });
 
     // Crear un array de promesas para la creación de tratamientos dentales

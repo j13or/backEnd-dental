@@ -6,7 +6,6 @@ import { initModel } from './models/initModels.js';
 const port = process.env.PORT || 3032;
 
 initModel();
-
 db.authenticate()
   .then(() => {
     return db.sync();

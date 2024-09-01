@@ -1,5 +1,6 @@
 import { AppError } from '../utils/AppError.js';
 import { Consulta } from '../models/consulta.model.js';
+import { Op, Sequelize } from 'sequelize';
 
 export const findAll = async (req, res, next) => {
   try {
@@ -14,6 +15,45 @@ export const findAll = async (req, res, next) => {
     return res.status(200).json({
       status: 'success',
       message: 'Todas los tratamientos Dental',
+      results: consultas.length,
+      consultas,
+    });
+  } catch (error) {
+    return next(
+      new AppError(
+        `Error al llamar a todas las consultas: ${error.message}`,
+        500
+      )
+    );
+  }
+};
+
+export const findAllConsultorioId = async (req, res, next) => {
+  const { date } = req.query;
+  const { id } = req.params;
+
+  try {
+    let whereCondition = { consultorioId: id };
+
+    if (date) {
+      whereCondition = {
+        consultorioId: id,
+        [Op.and]: Sequelize.where(
+          Sequelize.fn('DATE', Sequelize.col('createdAt')),
+          '=',
+          date
+        ),
+      };
+    }
+
+    const consultas = await Consulta.findAll({
+      where: whereCondition,
+      order: [['id', 'ASC']],
+    });
+
+    return res.status(200).json({
+      status: 'success',
+      message: 'Todos los tratamientos dentales',
       results: consultas.length,
       consultas,
     });

@@ -8,6 +8,7 @@ import * as planTratamientoMiddleware from '../middlewares/planTratamiento.middl
 const router = express.Router();
 
 router.get('/plan-tratamiento/:id', consultaController.findAll);
+router.get('/consultorio/:id', consultaController.findAllConsultorioId);
 
 router
   .route('/:id')
