@@ -24,10 +24,6 @@ const Consulta = db.define('consulta', {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  pago: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
 });
 
 export { Consulta };
